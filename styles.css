@@ -30,16 +30,24 @@ body {
     align-items: center;
 }
 
+.brand-text {
+    font-family: var(--heading-font);
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: var(--primary-color);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.brand-text:hover {
+    color: #1e3f2d;
+}
+
 .navbar-brand svg {
     height: 36px;
     width: auto;
     max-width: 280px;
-}
-
-.navbar-brand text {
-    font-family: var(--heading-font);
-    font-weight: 700;
-    letter-spacing: 0.05em;
 }
 
 .nav-link {
@@ -306,7 +314,7 @@ body {
     padding: 60px 0 80px;
     background-color: white;
     position: relative;
-    margin-top: -40px;
+    margin-top: 0;
 }
 
 .process h2 {
@@ -379,8 +387,8 @@ body {
 
 @media (max-width: 992px) {
     .process {
-        padding: 100px 0 60px;
-        margin-top: -30px;
+        padding: 60px 0 40px;
+        margin-top: 0;
     }
 
     .process h2 {
@@ -411,8 +419,8 @@ body {
 
 @media (max-width: 576px) {
     .process {
-        padding: 80px 0 40px;
-        margin-top: -20px;
+        padding: 40px 0 30px;
+        margin-top: 0;
     }
 
     .process h2 {
@@ -730,6 +738,15 @@ body {
     .team-subtitle {
         font-size: 1rem;
     }
+
+    .navbar-brand svg {
+        height: 30px;
+    }
+
+    .brand-text {
+        font-size: 1.1rem;
+        letter-spacing: 0.08em;
+    }
 }
 
 .social-grid {
@@ -855,4 +872,87 @@ body {
     .social-card.calendar small {
         font-size: 0.9rem;
     }
+}
+
+/* Clients Section */
+.clients {
+    padding: 40px 0;
+    background-color: var(--secondary-color);
+    position: relative;
+    margin-top: -80px;
+}
+
+.clients h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    font-weight: 500;
+    font-size: 1.75rem;
+    margin-bottom: 2.5rem;
+    letter-spacing: 0.02em;
+    text-transform: lowercase;
+}
+
+.client-grid {
+    display: grid;
+    grid-template-columns: minmax(200px, 300px);
+    justify-content: center;
+    gap: 2rem;
+    padding: 0;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Remove the clients-subtitle class as it's no longer needed */
+.clients-subtitle {
+    display: none;
+}
+
+@media (max-width: 992px) {
+    .clients h2 {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .client-grid {
+        grid-template-columns: minmax(180px, 260px);
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .clients h2 {
+        font-size: 1.25rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .client-grid {
+        grid-template-columns: minmax(160px, 220px);
+        padding: 1rem;
+    }
+
+    .client-logo {
+        padding: 1.5rem;
+    }
+}
+
+.client-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.client-logo:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.client-image {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
 }
