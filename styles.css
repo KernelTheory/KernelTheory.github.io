@@ -470,6 +470,23 @@ body {
     letter-spacing: -0.01em;
 }
 
+.footer-text {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    display: inline-block;
+}
+
+.footer-text.visible {
+    opacity: 1;
+}
+
+/* Show footer text always on mobile */
+@media (max-width: 768px) {
+    .footer-text {
+        opacity: 1 !important;
+    }
+}
+
 .footer a {
     color: white;
     text-decoration: none;
