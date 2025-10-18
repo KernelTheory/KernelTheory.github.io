@@ -911,12 +911,14 @@ body {
 
 .client-grid {
     display: grid;
-    grid-template-columns: minmax(200px, 300px);
-    justify-content: center;
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 320px));
+    align-items: stretch;
+    justify-items: center;
+    gap: 1rem;
     padding: 0;
     max-width: 1200px;
     margin: 0 auto;
+    justify-content: center;
 }
 
 /* Remove the clients-subtitle class as it's no longer needed */
@@ -931,8 +933,8 @@ body {
     }
 
     .client-grid {
-        grid-template-columns: minmax(180px, 260px);
-        padding: 1.5rem;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        padding: 1rem;
     }
 }
 
@@ -943,12 +945,13 @@ body {
     }
 
     .client-grid {
-        grid-template-columns: minmax(160px, 220px);
-        padding: 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+        padding: 0.75rem;
     }
 
     .client-logo {
-        padding: 1.5rem;
+        padding: 1.25rem;
+        height: 120px;
     }
 }
 
@@ -957,6 +960,7 @@ body {
     align-items: center;
     justify-content: center;
     padding: 2rem;
+    height: 140px;
     background: white;
     border-radius: 12px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
@@ -970,6 +974,8 @@ body {
 
 .client-image {
     max-width: 100%;
+    width: auto;
+    max-height: 80px;
     height: auto;
     object-fit: contain;
 }
