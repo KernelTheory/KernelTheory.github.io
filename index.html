@@ -9,8 +9,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -25,12 +24,18 @@
 </script>
 
 <body>
+    <!-- Animated Background Grid -->
+    <div class="bg-grid"></div>
+
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container d-flex justify-content-start">
+        <div class="container d-flex justify-content-between align-items-center">
             <a class="navbar-brand" href="#">
-                <div class="brand-text">KernelTheory</div>
+                <div class="brand-text">Kernel<span class="brand-accent">Theory</span></div>
             </a>
+            <div class="nav-cta">
+                <a href="#contact" class="btn btn-glow">Let's Build</a>
+            </div>
         </div>
     </nav>
 
@@ -39,57 +44,39 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6 hero-content">
-                    <h1>Bring your Ideas into <span class="underline-effect">Reality</span></h1>
-                    <p class="lead">Transform your vision through <span class="highlight-text">AI-powered
-                            innovation</span> and <span class="highlight-text">battle-tested expertise</span></p>
-                    <div class="features">
-                        <div class="feature-item">
-                            <span class="feature-icon">
-                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M13 19L22 12L13 5V19Z" fill="currentColor" />
-                                    <path d="M2 19L11 12L2 5V19Z" fill="currentColor" fill-opacity="0.5" />
-                                </svg>
-                            </span>
-                            <div class="feature-text">
-                                <span class="highlight-text-bold">60% Faster Development</span>
-                                <span>Powered by AI</span>
-                            </div>
+                    <div class="hero-badge">
+                        <span class="pulse-dot"></span>
+                        <span>AI-First Development Studio</span>
+                    </div>
+                    <h1>We Build the <span class="gradient-text">Future</span> <br>You Imagine</h1>
+                    <p class="lead">Young minds. Bold ideas. Battle-tested code.<br>
+                        From <span class="highlight-text">rapid MVPs</span> to <span
+                            class="highlight-text">production-grade systems</span> — we ship 60% faster with AI.</p>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">60%</span>
+                            <span class="stat-label">Faster Delivery</span>
                         </div>
-                        <div class="feature-item">
-                            <span class="feature-icon">
-                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M12 2L15 8L21 9L17 14L18 20L12 17L6 20L7 14L3 9L9 8L12 2Z"
-                                        fill="currentColor" />
-                                </svg>
-                            </span>
-                            <div class="feature-text">
-                                <span class="highlight-text-bold">Transparent Pricing</span>
-                                <span>No Hidden Costs</span>
-                            </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <span class="stat-number">24/7</span>
+                            <span class="stat-label">AI-Powered</span>
                         </div>
-                        <div class="feature-item">
-                            <span class="feature-icon">
-                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM13 17H11V11H13V17ZM13 9H11V7H13V9Z"
-                                        fill="currentColor" />
-                                </svg>
-                            </span>
-                            <div class="feature-text">
-                                <span class="highlight-text-bold">Expert Consultation</span>
-                                <span>Always Free</span>
-                            </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <span class="stat-number">0</span>
+                            <span class="stat-label">Hidden Costs</span>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6" id="contact">
                     <div class="hero-form">
                         <div class="form-header">
-                            <h3>No Contact Forms</h3>
-                            <p>Connect directly with our product leaders</p>
+                            <div class="form-icon">
+                                <i class="bi bi-lightning-charge-fill"></i>
+                            </div>
+                            <h3>Skip the Forms</h3>
+                            <p>Talk directly to our builders</p>
                         </div>
                         <div class="social-grid">
                             <a href="https://calendly.com/hey-kerneltheory/30min" target="_blank"
@@ -101,7 +88,7 @@
                             <a href="mailto:hey@kerneltheory.com?subject=Lets%20talk&body=Hi%20Team%20KernelTheory,%0A%0ALooks%20like%20you%20are%20our%20best%20option%20to%20build%20something%20amazing.%20let's%20connect?"
                                 class="social-card email">
                                 <i class="bi bi-envelope"></i>
-                                <span>Send an Email</span>
+                                <span>Send Email</span>
                                 <small>Quick Response</small>
                             </a>
                         </div>
@@ -109,105 +96,354 @@
                 </div>
             </div>
         </div>
+        <!-- Floating Elements -->
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
     </section>
 
     <!-- Clients Section -->
     <section class="clients">
         <div class="container">
-            <h2 class="text-center">Client that prefer us</h2>
+            <div class="section-header">
+                <span class="section-tag">Trusted By</span>
+                <h2>Clients Who <span class="gradient-text">Believe</span></h2>
+            </div>
             <div class="client-grid">
-                <!-- Tech Corp Logo -->
                 <div class="client-logo">
                     <img src="images/client-1-logo.png" alt="IIHS" class="client-image">
                 </div>
                 <div class="client-logo">
                     <img src="images/client-2-logo.png" alt="MyCaptain" class="client-image">
                 </div>
+                <div class="client-logo">
+                    <img src="images/client-3-logo.png" alt="Quik Referral" class="client-image">
+                </div>
+                <div class="client-logo">
+                    <img src="images/appc8-logo.svg" alt="AppC8" class="client-image">
+                </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Why Us Section -->
+    <section class="why-us">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Why KernelTheory</span>
+                <h2>Young. Bold. <span class="gradient-text">Relentless.</span></h2>
+                <p class="section-subtitle">We're not another consulting firm. We're builders who happen to consult.</p>
+            </div>
+            <div class="why-grid">
+                <div class="why-card">
+                    <div class="why-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13 2L3 14H12L11 22L21 10H12L13 2Z" fill="currentColor" />
+                        </svg>
+                    </div>
+                    <h3>AI-Native Workflow</h3>
+                    <p>We don't just use AI — we think in AI. Every line of code is supercharged with intelligent
+                        automation.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2L2 7L12 12L22 7L12 2Z" fill="currentColor" />
+                            <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                            <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <h3>Full-Stack Mastery</h3>
+                    <p>Frontend, backend, infra, ML pipelines — we own the entire stack. No handoffs, no excuses.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" />
+                            <path d="M12 6V12L16 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <h3>Ship Fast, Ship Right</h3>
+                    <p>Working prototype in 4 weeks. Production-ready in 8. We move at startup speed with enterprise
+                        quality.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM10 17L5 12L6.41 10.59L10 14.17L17.59 6.58L19 8L10 17Z"
+                                fill="currentColor" />
+                        </svg>
+                    </div>
+                    <h3>Transparent Always</h3>
+                    <p>Fixed pricing. Weekly demos. Direct access to engineers. We believe trust is built through
+                        openness.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack Visual -->
+    <section class="tech-stack">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Our Arsenal</span>
+                <h2>Cutting-Edge <span class="gradient-text">Tech Stack</span></h2>
+            </div>
+            <div class="tech-marquee">
+                <div class="tech-track">
+                    <div class="tech-item">React</div>
+                    <div class="tech-item">Next.js</div>
+                    <div class="tech-item">TypeScript</div>
+                    <div class="tech-item">Python</div>
+                    <div class="tech-item">Node.js</div>
+                    <div class="tech-item">PostgreSQL</div>
+                    <div class="tech-item">AWS</div>
+                    <div class="tech-item">Docker</div>
+                    <div class="tech-item">OpenAI</div>
+                    <div class="tech-item">LangChain</div>
+                    <div class="tech-item">Kubernetes</div>
+                    <div class="tech-item">GraphQL</div>
+                    <!-- Duplicate for seamless loop -->
+                    <div class="tech-item">React</div>
+                    <div class="tech-item">Next.js</div>
+                    <div class="tech-item">TypeScript</div>
+                    <div class="tech-item">Python</div>
+                    <div class="tech-item">Node.js</div>
+                    <div class="tech-item">PostgreSQL</div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Process Section -->
     <section id="process" class="process">
         <div class="container">
-            <h2 class="text-center mb-3">This is how we work</h2>
-            <p class="text-center mb-5 process-subtitle">Process is at the heart of our work. We believe in transparency
-                and collaboration.</p>
+            <div class="section-header">
+                <span class="section-tag">Our Process</span>
+                <h2>How We <span class="gradient-text">Deliver</span></h2>
+                <p class="section-subtitle">Transparent collaboration from day one. No black boxes.</p>
+            </div>
 
-            <div class="process-cards">
+            <div class="process-timeline">
                 <div class="process-card">
-                    <div class="process-icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM13 17H11V11H13V17ZM13 9H11V7H13V9Z"
-                                fill="currentColor" />
-                        </svg>
+                    <div class="process-number">01</div>
+                    <div class="process-content">
+                        <h3>Discovery</h3>
+                        <p>We dig deep into your vision. What problem are you solving? Who's your user? We ask the hard
+                            questions so we build the right thing.</p>
                     </div>
-                    <h3>Discovery</h3>
-                    <p>We listen and understand your needs</p>
-                    <p>We will ask you questions to get a clear picture of your project.</p>
                 </div>
                 <div class="process-card">
-                    <div class="process-icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M9 21H5C4.45 21 4 20.55 4 20V4C4 3.45 4.45 3 5 3H9C9.55 3 10 3.45 10 4V20C10 20.55 9.55 21 9 21ZM19 21H15C14.45 21 14 20.55 14 20V13C14 12.45 14.45 12 15 12H19C19.55 12 20 12.45 20 13V20C20 20.55 19.55 21 19 21ZM19 10H15C14.45 10 14 9.55 14 9V4C14 3.45 14.45 3 15 3H19C19.55 3 20 3.45 20 4V9C20 9.55 19.55 10 19 10Z"
-                                fill="currentColor" />
-                        </svg>
+                    <div class="process-number">02</div>
+                    <div class="process-content">
+                        <h3>Strategy</h3>
+                        <p>We map the fastest path to value. Tech stack, architecture, timeline — all designed to
+                            maximize impact within your budget.</p>
                     </div>
-                    <h3>Strategy</h3>
-                    <p>We will propose a roadmap for your project</p>
-                    <p>We figure out the best way to solve your problems within the budget and timeline.</p>
                 </div>
                 <div class="process-card">
-                    <div class="process-icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M3 17.25V21H6.75L17.81 9.94L14.06 6.19L3 17.25ZM21.41 6.34L17.66 2.59C17.27 2.2 16.64 2.2 16.25 2.59L13.64 5.2L17.39 8.95L21.41 4.93C21.8 4.54 21.8 3.91 21.41 3.52V6.34Z"
-                                fill="currentColor" />
-                        </svg>
+                    <div class="process-number">03</div>
+                    <div class="process-content">
+                        <h3>Build</h3>
+                        <p>AI-accelerated development with weekly demos. You see progress in real-time, not after months
+                            of silence.</p>
                     </div>
-                    <h3>Development</h3>
-                    <p>We build your project with the best practices and tools</p>
-                    <p>You will get a working prototype of your product within 4 weeks</p>
                 </div>
                 <div class="process-card">
-                    <div class="process-icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M19 9L20.25 6.25L23 5L20.25 3.75L19 1L17.75 3.75L15 5L17.75 6.25L19 9Z"
-                                fill="currentColor" />
-                            <path d="M19 15L17.75 17.75L15 19L17.75 20.25L19 23L20.25 20.25L23 19L20.25 17.75L19 15Z"
-                                fill="currentColor" />
-                            <path d="M11.5 9.5L9 4L6.5 9.5L1 12L6.5 14.5L9 20L11.5 14.5L17 12L11.5 9.5Z"
-                                fill="currentColor" />
-                        </svg>
+                    <div class="process-number">04</div>
+                    <div class="process-content">
+                        <h3>Launch</h3>
+                        <p>We don't just deploy and disappear. We help you scale, iterate, and win in the market.</p>
                     </div>
-                    <h3>Launch</h3>
-                    <p>This will be the moment when you see your project come to life.</p>
-                    <p>We help you scale your project and get it in front of your customers.</p>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Team Section -->
     <section class="founders">
         <div class="container">
-            <h2 class="text-center">This is a team of friends and family</h2>
-        </div>
-
-        <div class="container">
-            <h2 class="text-center">and</h2>
+            <div class="section-header">
+                <span class="section-tag">The Team</span>
+                <h2>Built by <span class="gradient-text">Builders</span></h2>
+                <p class="section-subtitle">A tight-knit crew of engineers, designers, and dreamers.<br>Friends first.
+                    Colleagues second.</p>
+            </div>
+            <div class="team-vibe">
+                <div class="vibe-card">
+                    <i class="bi bi-rocket-takeoff"></i>
+                    <span>Startup DNA</span>
+                </div>
+                <div class="vibe-card">
+                    <i class="bi bi-heart-fill"></i>
+                    <span>Passion-Driven</span>
+                </div>
+                <div class="vibe-card">
+                    <i class="bi bi-stars"></i>
+                    <span>Always Learning</span>
+                </div>
+                <div class="vibe-card">
+                    <i class="bi bi-lightning-fill"></i>
+                    <span>Ship Daily</span>
+                </div>
+            </div>
         </div>
     </section>
 
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Build Something <span class="gradient-text">Amazing?</span></h2>
+                <p>Let's turn your idea into reality. No pitch decks needed — just a conversation.</p>
+                <a href="https://calendly.com/hey-kerneltheory/30min" target="_blank" class="btn btn-glow btn-lg">
+                    <i class="bi bi-calendar-check"></i>
+                    Book Your Free Call
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Terms & Policies Section -->
+    <section class="policies">
+        <div class="container">
+            <div class="policies-grid">
+                <div class="policy-item" data-bs-toggle="modal" data-bs-target="#termsModal">
+                    <i class="bi bi-file-text"></i>
+                    <span>Terms of Service</span>
+                </div>
+                <div class="policy-item" data-bs-toggle="modal" data-bs-target="#privacyModal">
+                    <i class="bi bi-shield-check"></i>
+                    <span>Privacy Policy</span>
+                </div>
+                <div class="policy-item" data-bs-toggle="modal" data-bs-target="#refundModal">
+                    <i class="bi bi-arrow-repeat"></i>
+                    <span>Refund Policy</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
-    <footer class="footer fixed-bottom">
+    <footer class="footer">
         <div class="container">
-            <div class="text-center">
-                <span class="footer-text">We ❤️ to build products that people need</span>
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="brand-text">Kernel<span class="brand-accent">Theory</span></span>
+                    <p>We ❤️ to build products that people need</p>
+                </div>
+                <div class="footer-links">
+                    <a href="mailto:hey@kerneltheory.com">hey@kerneltheory.com</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>© 2024 KernelTheory. All rights reserved.</span>
             </div>
         </div>
     </footer>
+
+    <!-- Terms Modal -->
+    <div class="modal fade" id="termsModal" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Terms of Service</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p><strong>Last Updated:</strong> December 2024</p>
+                    <h6>1. Services</h6>
+                    <p>KernelTheory provides software consulting, development, and related technology services. By
+                        engaging our services, you agree to these terms.</p>
+                    <h6>2. Project Scope</h6>
+                    <p>All project deliverables, timelines, and costs will be agreed upon in writing before work begins.
+                        Changes to scope may affect timeline and pricing.</p>
+                    <h6>3. Intellectual Property</h6>
+                    <p>Upon full payment, all custom code and deliverables created for your project become your
+                        property. We retain rights to general methodologies and pre-existing tools.</p>
+                    <h6>4. Confidentiality</h6>
+                    <p>We treat all client information as confidential. We will not share your business information,
+                        code, or data with third parties without your consent.</p>
+                    <h6>5. Payment Terms</h6>
+                    <p>Payment terms are outlined in individual project agreements. Late payments may result in project
+                        delays or suspension.</p>
+                    <h6>6. Limitation of Liability</h6>
+                    <p>Our liability is limited to the total amount paid for services. We are not liable for indirect,
+                        incidental, or consequential damages.</p>
+                    <h6>7. Termination</h6>
+                    <p>Either party may terminate with 14 days written notice. Payment is due for all work completed up
+                        to termination date.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Privacy Modal -->
+    <div class="modal fade" id="privacyModal" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Privacy Policy</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p><strong>Last Updated:</strong> December 2024</p>
+                    <h6>Information We Collect</h6>
+                    <p>We collect information you provide directly: name, email, company details, and project
+                        requirements when you contact us or engage our services.</p>
+                    <h6>How We Use Information</h6>
+                    <p>We use your information to: provide services, communicate about projects, send relevant updates,
+                        and improve our offerings.</p>
+                    <h6>Data Security</h6>
+                    <p>We implement industry-standard security measures to protect your data. All communications are
+                        encrypted, and we use secure infrastructure.</p>
+                    <h6>Third-Party Services</h6>
+                    <p>We use analytics (Google Analytics) to understand website usage. We do not sell or share your
+                        personal data with third parties for marketing.</p>
+                    <h6>Your Rights</h6>
+                    <p>You have the right to access, correct, or delete your personal data. Contact us at
+                        hey@kerneltheory.com for any privacy-related requests.</p>
+                    <h6>Cookies</h6>
+                    <p>Our website uses essential cookies for functionality and analytics cookies to improve user
+                        experience. You can disable cookies in your browser settings.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Refund Modal -->
+    <div class="modal fade" id="refundModal" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Refund Policy</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p><strong>Last Updated:</strong> December 2024</p>
+                    <h6>Our Commitment</h6>
+                    <p>We stand behind our work. If you're not satisfied, we'll make it right.</p>
+                    <h6>Discovery Phase</h6>
+                    <p>Initial consultations and discovery calls are always free. No commitment, no charges.</p>
+                    <h6>Project Milestones</h6>
+                    <p>Projects are structured with milestone-based payments. You only pay for approved, completed
+                        milestones.</p>
+                    <h6>Satisfaction Guarantee</h6>
+                    <p>If a deliverable doesn't meet the agreed specifications, we'll revise it at no additional cost
+                        until it does.</p>
+                    <h6>Refund Eligibility</h6>
+                    <p>Full refunds are available if we fail to deliver the agreed scope. Partial refunds may be issued
+                        for incomplete milestones at our discretion.</p>
+                    <h6>How to Request</h6>
+                    <p>Contact us at hey@kerneltheory.com with your concerns. We respond within 24 hours and work to
+                        resolve issues promptly.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="main.js"></script>
