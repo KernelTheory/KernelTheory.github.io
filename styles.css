@@ -465,6 +465,37 @@ body {
     color: var(--accent);
 }
 
+.tech-item i {
+    font-size: 1.25rem;
+    margin-right: 0.5rem;
+    vertical-align: middle;
+}
+
+.tech-item .tech-logo {
+    height: 1.25rem;
+    width: auto;
+    margin-right: 0.5rem;
+    vertical-align: middle;
+}
+
+.tech-item svg.tech-logo {
+    color: #00A67E;
+}
+
+/* Brand colors for tech icons */
+.tech-item .devicon-ruby-plain { color: #CC342D; }
+.tech-item .devicon-rails-plain { color: #CC0000; }
+.tech-item .bi-cursor-fill { color: #FFFFFF; }
+.tech-item .bi-stars { color: #D97757; }
+.tech-item .bi-robot { color: #00A67E; }
+.tech-item .devicon-google-plain { color: #4285F4; }
+.tech-item .devicon-amazonwebservices-plain-wordmark { color: #FF9900; }
+.tech-item .devicon-azure-plain { color: #0078D4; }
+.tech-item .devicon-googlecloud-plain { color: #4285F4; }
+.tech-item .devicon-docker-plain { color: #2496ED; }
+.tech-item .devicon-postgresql-plain { color: #336791; }
+.tech-item .devicon-python-plain { color: #3776AB; }
+
 /* Clients Section */
 .clients {
     padding: 100px 0;
