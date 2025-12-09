@@ -192,9 +192,13 @@ body {
     background: rgba(255, 255, 255, 0.03);
     backdrop-filter: blur(20px);
     border: 1px solid rgba(255, 255, 255, 0.1);
-    padding: 2.5rem;
+    padding: 2rem;
     border-radius: 24px;
     transition: all 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .hero-form:hover {
@@ -225,13 +229,36 @@ body {
 
 .form-header h3 {
     font-family: var(--heading-font);
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     font-weight: 700;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.35rem;
+}
+
+.form-header.compact {
+    margin-bottom: 1.25rem;
+}
+
+.form-icon-inline {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background: var(--gradient-1);
+    border-radius: 10px;
+    margin-right: 0.5rem;
+    vertical-align: middle;
+}
+
+.form-icon-inline i {
+    font-size: 1rem;
+    color: var(--primary);
 }
 
 .form-header p {
     color: var(--text-muted);
+    font-size: 0.9rem;
+    margin: 0;
 }
 
 .social-grid {
@@ -245,14 +272,13 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 1.5rem;
+    padding: 1.25rem 1rem;
     background: rgba(255, 255, 255, 0.05);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 16px;
     text-decoration: none;
     color: var(--text);
     transition: all 0.3s ease;
-    min-height: 140px;
 }
 
 .social-card:hover {
@@ -263,20 +289,64 @@ body {
 }
 
 .social-card i {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: var(--accent);
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.5rem;
 }
 
 .social-card span {
     font-family: var(--heading-font);
     font-weight: 600;
-    margin-bottom: 0.25rem;
+    margin-bottom: 0.2rem;
 }
 
 .social-card small {
     color: var(--text-muted);
-    font-size: 0.85rem;
+    font-size: 0.8rem;
+}
+
+/* Free Offer Section */
+.free-offer {
+    margin-top: 1.5rem;
+    padding: 1.25rem 1.5rem;
+    background: linear-gradient(135deg, rgba(0, 255, 136, 0.1) 0%, rgba(0, 212, 255, 0.05) 100%);
+    border: 1px solid rgba(0, 255, 136, 0.3);
+    border-radius: 16px;
+    text-align: center;
+}
+
+.offer-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    background: var(--gradient-1);
+    color: var(--primary);
+    padding: 0.3rem 0.75rem;
+    border-radius: 50px;
+    font-size: 0.75rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.6rem;
+}
+
+.free-offer h4 {
+    font-family: var(--heading-font);
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: var(--text);
+}
+
+.free-offer p {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.free-offer p strong {
+    color: var(--accent);
 }
 
 /* Floating Shapes */
@@ -503,23 +573,28 @@ body {
 }
 
 .client-grid {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .client-logo {
     background: rgb(255, 255, 255);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 16px;
-    padding: 2rem 3rem;
+    padding: 1.5rem;
     transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 16 / 9;
 }
 
 .client-image {
-    max-height: 60px;
-    max-width: 180px;
+    max-height: 50px;
+    max-width: 140px;
     width: auto;
     height: auto;
     opacity: 0.9;
@@ -530,6 +605,12 @@ body {
 .client-logo:hover .client-image {
     opacity: 1;
     transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .client-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 /* Process Section */
