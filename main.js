@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   // Set dynamic copyright year
-  document.getElementById("copyright-year").textContent = new Date().getFullYear();
+  document.getElementById("copyright-year").textContent =
+    new Date().getFullYear();
 
   // Smooth scrolling for anchor links
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
