@@ -576,6 +576,7 @@ body {
     overflow: hidden;
     width: 100%;
     margin-top: 2rem;
+    padding-block: 1.25rem;
     mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
     -webkit-mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
 }
@@ -594,8 +595,8 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: clamp(2rem, 4vw, 3.5rem);
-    padding-right: clamp(2rem, 4vw, 3.5rem);
+    gap: clamp(2.5rem, 6vw, 5rem);
+    padding-right: clamp(2.5rem, 6vw, 5rem);
     flex-shrink: 0;
 }
 
@@ -614,48 +615,48 @@ body {
     align-items: center;
     justify-content: center;
     flex: 0 0 auto;
-    padding: 0.35rem 0.25rem;
+    padding: 0.25rem 0.5rem;
     margin: 0;
     background: none;
     border: none;
     border-radius: 0;
-    min-height: 52px;
+    min-height: 4.5rem;
     transition: opacity 0.3s ease, filter 0.3s ease;
 }
 
 .client-logo--text {
     font-family: var(--heading-font);
     font-weight: 700;
-    font-size: clamp(1.15rem, 2.2vw, 1.65rem);
+    font-size: clamp(1.5rem, 3.2vw, 2.35rem);
     letter-spacing: -0.03em;
-    color: #8b9099;
+    color: #a8adb6;
     white-space: nowrap;
 }
 
 .client-image {
     display: block;
-    max-height: 44px;
-    max-width: 150px;
+    max-height: 72px;
+    max-width: 240px;
     width: auto;
     height: auto;
     object-fit: contain;
     filter: grayscale(1);
-    opacity: 0.55;
+    opacity: 0.78;
     transition: opacity 0.35s ease, filter 0.35s ease;
 }
 
 .client-image--manaba {
-    max-height: 48px;
-    max-width: 160px;
+    max-height: 80px;
+    max-width: 260px;
 }
 
 .client-logo:hover .client-image {
-    opacity: 0.85;
-    filter: grayscale(1) brightness(1.15);
+    opacity: 0.95;
+    filter: grayscale(1) brightness(1.12);
 }
 
 .client-logo--text:hover {
-    color: #b8bcc4;
+    color: #c5cad3;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -684,17 +685,22 @@ body {
 
 @media (max-width: 768px) {
     .client-image {
-        max-height: 36px;
-        max-width: 130px;
+        max-height: 52px;
+        max-width: 180px;
     }
 
     .client-image--manaba {
-        max-height: 40px;
-        max-width: 140px;
+        max-height: 58px;
+        max-width: 200px;
     }
 
     .client-logo {
-        min-height: 44px;
+        min-height: 3.5rem;
+    }
+
+    .client-ticker-group {
+        gap: clamp(1.75rem, 5vw, 3rem);
+        padding-right: clamp(1.75rem, 5vw, 3rem);
     }
 
     .client-ticker-track {
