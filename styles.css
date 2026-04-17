@@ -650,9 +650,20 @@ body {
     max-width: 260px;
 }
 
+/* Raster logo (dark maroon): grayscale + invert reads as light grey on dark UI */
+.client-image--light-grey {
+    filter: grayscale(1) invert(1) brightness(0.88);
+    opacity: 0.9;
+}
+
 .client-logo:hover .client-image {
     opacity: 0.95;
     filter: grayscale(1) brightness(1.12);
+}
+
+.client-logo:hover .client-image--light-grey {
+    filter: grayscale(1) invert(1) brightness(0.96);
+    opacity: 0.95;
 }
 
 .client-logo--text:hover {
