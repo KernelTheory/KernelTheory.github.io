@@ -585,6 +585,219 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
 }
 
+/* ---------- Featured Case Studies (homepage) ---------- */
+.featured-cases {
+    padding: 5rem 0 6rem;
+}
+
+.featured-cases-header {
+    margin-bottom: 3rem;
+    max-width: 820px;
+}
+
+.featured-cases-title {
+    font-size: clamp(1.75rem, 3.5vw, 2.75rem);
+    font-weight: 400;
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+    margin-bottom: 1rem;
+}
+
+.featured-cases-sub {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: #666;
+    max-width: 620px;
+}
+
+.featured-cases-grid {
+    display: grid;
+    grid-template-columns: 1.35fr 1fr;
+    gap: 1.5rem;
+    align-items: stretch;
+}
+
+.fcase {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #e0e0e0;
+    border-radius: 20px;
+    background: #fff;
+    overflow: hidden;
+    color: inherit;
+    text-decoration: none;
+    transition: border-color 0.35s ease, transform 0.35s ease;
+}
+.fcase:hover {
+    border-color: #000;
+    transform: translateY(-2px);
+}
+
+.fcase-thumb {
+    width: 100%;
+    aspect-ratio: 16/10;
+    flex-shrink: 0;
+}
+.fcase-thumb--light { background: #f0f0f0; }
+.fcase-thumb--dark { background: #1a1a1a; }
+
+.fcase-body {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.fcase-tag {
+    align-self: flex-start;
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #555;
+    background: #f1f1f1;
+    padding: 0.4rem 0.75rem;
+    border-radius: 999px;
+    margin-bottom: 1.25rem;
+}
+
+.fcase--hero .fcase-thumb { aspect-ratio: 16/6.5; }
+.fcase--hero .fcase-body { padding: 2.25rem; }
+
+.fcase-thumb--visual {
+    position: relative;
+    overflow: hidden;
+}
+.fcase-visual {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.fcase-client {
+    font-size: 0.85rem;
+    color: #999;
+    margin-bottom: 0.5rem;
+}
+
+.fcase-title {
+    font-size: clamp(1.35rem, 2vw, 1.75rem);
+    font-weight: 400;
+    line-height: 1.3;
+    letter-spacing: -0.01em;
+    margin-bottom: 1.5rem;
+}
+
+.fcase-ba {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 1.25rem;
+    row-gap: 0.5rem;
+    margin: 0 0 1.75rem;
+}
+.fcase-ba-label {
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #999;
+    align-self: center;
+}
+.fcase-ba-text {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+.fcase-ba-text--before {
+    color: #999;
+}
+.fcase-ba-text--after {
+    color: #111;
+    font-weight: 500;
+}
+
+.fcase-link {
+    margin-top: auto;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #000;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+}
+
+.fcase-side {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+/* Feature variant (work page) — horizontal */
+.featured-case-single {
+    padding: 3rem 0 4rem;
+}
+.fcase--feature {
+    flex-direction: row;
+    align-items: stretch;
+}
+.fcase--feature .fcase-thumb {
+    width: 55%;
+    aspect-ratio: auto;
+    flex-shrink: 0;
+}
+.fcase--feature .fcase-body {
+    flex: 1;
+    justify-content: center;
+    padding: 2.75rem 3rem;
+}
+.fcase--feature .fcase-title {
+    font-size: clamp(1.5rem, 2.2vw, 2rem);
+    margin-bottom: 1.75rem;
+}
+@media (max-width: 900px) {
+    .fcase--feature { flex-direction: column; }
+    .fcase--feature .fcase-thumb { width: 100%; aspect-ratio: 16/6.5; }
+    .fcase--feature .fcase-body { padding: 2rem; }
+}
+
+.fcase--sm { flex-direction: row; align-items: stretch; }
+.fcase--sm .fcase-thumb {
+    width: 40%;
+    aspect-ratio: auto;
+    align-self: stretch;
+}
+.fcase--sm .fcase-body { padding: 1.5rem 1.75rem; }
+
+.fcase-sm-title {
+    font-size: 1.15rem;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    margin-bottom: 0.4rem;
+}
+.fcase-sm-sub {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.5;
+}
+
+.featured-cases-footer {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+@media (max-width: 900px) {
+    .featured-cases-grid { grid-template-columns: 1fr; }
+    .fcase-side { grid-template-rows: auto; }
+}
+
+@media (max-width: 600px) {
+    .fcase--sm { flex-direction: column; }
+    .fcase--sm .fcase-thumb { width: 100%; aspect-ratio: 16/10; }
+    .fcase--hero .fcase-body, .fcase-body { padding: 1.5rem; }
+}
+
 /* ---------- Our Story ---------- */
 .our-story {
     padding: 6rem 0;
