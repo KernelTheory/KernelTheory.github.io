@@ -492,6 +492,26 @@ h1, h2, h3, h4, h5, h6 {
     max-width: 600px;
 }
 
+.service-body-inner p {
+    margin: 0 0 0.75rem;
+}
+
+.service-body-inner p:last-child {
+    margin-bottom: 0;
+}
+
+.service-includes {
+    margin-top: 1rem !important;
+    font-size: 0.85rem;
+    color: #999;
+    letter-spacing: 0.02em;
+}
+
+.service-includes span {
+    color: #666;
+    font-weight: 500;
+}
+
 /* ---------- Case Studies Grid ---------- */
 .case-studies {
     padding: 6rem 0;
