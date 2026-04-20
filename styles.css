@@ -181,26 +181,69 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 400;
     line-height: 1.15;
     max-width: 900px;
+    margin-bottom: 1.5rem;
+}
+
+.hero-subtext {
+    font-size: clamp(1.05rem, 1.4vw, 1.25rem);
+    font-weight: 400;
+    line-height: 1.5;
+    color: #666;
+    max-width: 680px;
     margin-bottom: 2.5rem;
 }
 
-/* ---------- Clients Section ---------- */
-.clients {
-    padding: 5rem 0;
+/* ---------- Hero CTA + Logo Carousel ---------- */
+.hero-cta-row {
+    display: flex;
+    align-items: center;
+    gap: clamp(3rem, 16vw, 14rem);
+    flex-wrap: nowrap;
 }
 
-.clients-grid {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 3rem 2rem;
+.hero-cta {
+    flex-shrink: 0;
+}
+
+.hero-logos {
+    flex: 1;
+    min-width: 0;
+    overflow: hidden;
+    position: relative;
+    -webkit-mask-image: linear-gradient(to right, transparent 0, #000 48px, #000 calc(100% - 48px), transparent 100%);
+            mask-image: linear-gradient(to right, transparent 0, #000 48px, #000 calc(100% - 48px), transparent 100%);
+}
+
+.hero-logos-track {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
     align-items: center;
-    justify-items: center;
+    gap: 3rem;
+    width: max-content;
+    white-space: nowrap;
+    will-change: transform;
+    animation: hero-logos-scroll 30s linear infinite;
+}
+
+.hero-logos:hover .hero-logos-track {
+    animation-play-state: paused;
+}
+
+@keyframes hero-logos-scroll {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .hero-logos-track { animation: none; }
 }
 
 .client-logo {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-shrink: 0;
 }
 
 .client-logo img {
@@ -618,10 +661,12 @@ h1, h2, h3, h4, h5, h6 {
     .hero { padding: 8rem 0 4rem; min-height: auto; }
     .hero h1 { font-size: 2.25rem; }
 
-    .clients-grid {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 2rem 1.5rem;
+    .hero-cta-row {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 2rem;
     }
+    .hero-cta { align-self: flex-start; }
 
     .case-grid { grid-template-columns: 1fr; }
 
@@ -636,10 +681,6 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 480px) {
     .hero h1 { font-size: 1.85rem; }
-
-    .clients-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
 
     .service-header h3 { font-size: 1.25rem; }
 
