@@ -368,6 +368,7 @@ h6 {
 }
 
 .client-logo--mad img {
+    max-height: 61px;
     filter: drop-shadow(0 8px 20px rgba(0, 0, 0, 0.6)) drop-shadow(0 2px 6px rgba(0, 0, 0, 0.5));
 }
 
@@ -390,7 +391,7 @@ h6 {
 
 .client-logo--text.client-logo--appc8,
 .client-logo--text.client-logo--mymakaan {
-    font-weight: 700;
+    font-weight: 800;
 }
 
 .client-logo--text.client-logo--appc8 {
