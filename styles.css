@@ -246,8 +246,15 @@ section[id] {
 }
 
 @keyframes navEmailPop {
-    0%   { transform: scale(0.9); opacity: 0; }
-    100% { transform: scale(1);   opacity: 1; }
+    0% {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 
 /* Mobile nav toggle */
@@ -409,7 +416,7 @@ section[id] {
 
 /* ---------- What we do / Service Cards ---------- */
 .what-we-do {
-    padding: 5rem 0 2rem;
+    padding: 5rem 0 3rem;
 }
 
 .what-we-do-heading {
