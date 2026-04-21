@@ -26,6 +26,32 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
+    // How We Help — scroll reveal + active step
+    var hwhSteps = document.querySelectorAll(".hwh-step");
+    if (hwhSteps.length && "IntersectionObserver" in window) {
+        var revealObs = new IntersectionObserver(function (entries) {
+            entries.forEach(function (e) {
+                if (e.isIntersecting) {
+                    e.target.classList.add("is-visible");
+                    revealObs.unobserve(e.target);
+                }
+            });
+        }, { threshold: 0.25 });
+
+        var activeObs = new IntersectionObserver(function (entries) {
+            entries.forEach(function (e) {
+                e.target.classList.toggle("is-active", e.isIntersecting);
+            });
+        }, { rootMargin: "-40% 0px -40% 0px", threshold: 0 });
+
+        hwhSteps.forEach(function (step) {
+            revealObs.observe(step);
+            activeObs.observe(step);
+        });
+    } else if (hwhSteps.length) {
+        hwhSteps.forEach(function (step) { step.classList.add("is-visible"); });
+    }
+
     // Service accordion
     document.querySelectorAll(".service-item").forEach(function (item) {
         var header = item.querySelector(".service-header");
