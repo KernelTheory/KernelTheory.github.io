@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quik Referral — Fixing a broken MVP | KernelTheory</title>
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <meta name="description"
+        content="How we took Quik Referral from a fragile MVP with no ownership to a stable, team-owned product system.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css?v=32">
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WLSPG4KE3Q"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-WLSPG4KE3Q');
+</script>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="/" class="nav-logo">
+                Kernel Theory
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="/#services">Services</a>
+                <a href="/#case-studies">Work</a>
+                <a href="https://calendly.com/hey-kerneltheory/30min" target="_blank"
+                    class="btn btn-dark nav-cta-mobile" style="display:none;">Let's
+                    talk <i class="arrow-icon">&nearr;</i></a>
+            </div>
+            <div class="nav-actions">
+                <button type="button" class="nav-email" data-email="hey@kerneltheory.com"
+                    aria-label="Copy email address hey@kerneltheory.com">
+                    <span class="nav-email-default">hey@kerneltheory.com</span>
+                    <span class="nav-email-copied">Copied <i class="check-icon" aria-hidden="true">✓</i></span>
+                </button>
+                <a href="https://calendly.com/hey-kerneltheory/30min" target="_blank" class="btn btn-dark nav-cta">Let's
+                    talk <i class="arrow-icon">&nearr;</i></a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- 1. HERO -->
+    <section class="cs-hero">
+        <div class="container">
+            <a href="/#case-studies" class="cs-back">&larr; All work</a>
+            <span class="cs-tag">Fixing a broken MVP</span>
+            <h1 class="cs-hero-title">From a fragile MVP <span class="text-gray">&rarr; to a system the founders could
+                    control.</span></h1>
+            <p class="cs-hero-sub">Quik Referral had a working product&mdash;but no control, clarity or cost
+                predictability.
+                We helped them turn it into a system they could run.</p>
+            <ul class="cs-meta">
+                <li>Pre-revenue</li>
+                <li>3 beta users</li>
+                <li>8 months</li>
+                <li>Product + Engineering Stabilization</li>
+            </ul>
+            <div class="cs-hero-visual" aria-hidden="true">
+                <svg viewBox="0 0 640 260" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+                    <rect x="40" y="28" width="560" height="210" rx="10" fill="#242424"
+                        stroke="rgba(255,255,255,0.08)" />
+                    <circle cx="58" cy="46" r="3" fill="rgba(255,255,255,0.25)" />
+                    <circle cx="68" cy="46" r="3" fill="rgba(255,255,255,0.18)" />
+                    <circle cx="78" cy="46" r="3" fill="rgba(255,255,255,0.14)" />
+                    <line x1="40" y1="60" x2="600" y2="60" stroke="rgba(255,255,255,0.07)" />
+                    <line x1="130" y1="60" x2="130" y2="238" stroke="rgba(255,255,255,0.07)" />
+                    <rect x="52" y="76" width="64" height="7" rx="2" fill="rgba(255,255,255,0.28)" />
+                    <rect x="52" y="96" width="52" height="5" rx="2" fill="rgba(255,255,255,0.13)" />
+                    <rect x="52" y="112" width="60" height="5" rx="2" fill="rgba(255,255,255,0.13)" />
+                    <rect x="52" y="128" width="44" height="5" rx="2" fill="rgba(255,255,255,0.13)" />
+                    <rect x="52" y="144" width="56" height="5" rx="2" fill="rgba(255,255,255,0.13)" />
+                    <rect x="52" y="160" width="48" height="5" rx="2" fill="rgba(255,255,255,0.13)" />
+                    <rect x="150" y="76" width="430" height="20" rx="4" fill="rgba(255,255,255,0.05)" />
+                    <rect x="146" y="112" width="438" height="30" rx="6" fill="rgba(255,255,255,0.09)" />
+                    <circle cx="164" cy="127" r="6" fill="rgba(255,255,255,0.4)" />
+                    <rect x="180" y="122" width="100" height="5" rx="2" fill="rgba(255,255,255,0.5)" />
+                    <rect x="180" y="131" width="60" height="4" rx="2" fill="rgba(255,255,255,0.22)" />
+                    <rect x="528" y="120" width="42" height="14" rx="7" fill="rgba(255,255,255,0.22)" />
+                    <circle cx="164" cy="162" r="6" fill="rgba(255,255,255,0.2)" />
+                    <rect x="180" y="157" width="90" height="4.5" rx="2" fill="rgba(255,255,255,0.26)" />
+                    <rect x="180" y="167" width="50" height="3.5" rx="2" fill="rgba(255,255,255,0.12)" />
+                    <rect x="530" y="157" width="36" height="11" rx="5.5" fill="rgba(255,255,255,0.1)" />
+                    <circle cx="164" cy="192" r="6" fill="rgba(255,255,255,0.2)" />
+                    <rect x="180" y="187" width="110" height="4.5" rx="2" fill="rgba(255,255,255,0.26)" />
+                    <rect x="180" y="197" width="45" height="3.5" rx="2" fill="rgba(255,255,255,0.12)" />
+                    <rect x="530" y="187" width="36" height="11" rx="5.5" fill="rgba(255,255,255,0.1)" />
+                    <circle cx="164" cy="222" r="6" fill="rgba(255,255,255,0.2)" />
+                    <rect x="180" y="217" width="75" height="4.5" rx="2" fill="rgba(255,255,255,0.26)" />
+                    <rect x="180" y="227" width="55" height="3.5" rx="2" fill="rgba(255,255,255,0.12)" />
+                    <rect x="530" y="217" width="36" height="11" rx="5.5" fill="rgba(255,255,255,0.1)" />
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- About the product -->
+    <section class="cs-context">
+        <div class="container">
+            <div class="cs-context-row">
+                <p class="cs-section-label">About the product</p>
+                <div class="cs-context-body">
+                    <p class="cs-context-text">Quik Referral is a referral platform for local businesses, helping
+                        them grow through trusted recommendations.</p>
+                    <!-- <p class="cs-context-sub">At the time of engagement, the product worked&mdash;but the system behind
+                        it didn&rsquo;t.</p> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. THE PROBLEM -->
+    <section class="cs-section cs-section--alt">
+        <div class="container">
+            <p class="cs-section-label">The problem</p>
+            <h2 class="cs-statement">The product worked. <span class="text-gray">The system didn&rsquo;t.</span></h2>
+            <ul class="cs-problem-list">
+                <li>Codebase spread across multiple repositories</li>
+                <li>No documentation</li>
+                <li>Developers pulling from production</li>
+                <li>No staging or testing workflow</li>
+                <li>Scattered communication</li>
+                <li>Paying for structure that didn&rsquo;t exist</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- 3. THE RISK -->
+    <section class="cs-section cs-section--dark">
+        <div class="container">
+            <p class="cs-section-label cs-section-label--light">The risk</p>
+            <h2 class="cs-statement cs-statement--center">It
+                was unsustainable.</span></h2>
+            <p class="cs-risk-note">Costs kept rising. Progress slowed.<br>The team stayed
+                dependent&mdash;and eventually, everything would stall.</p>
+        </div>
+    </section>
+
+    <!-- 4. WHAT WE DID -->
+    <section class="cs-section">
+        <div class="container">
+            <p class="cs-section-label">What we did</p>
+            <h2 class="cs-section-heading">We didn&rsquo;t add more. <span class="text-gray">We fixed what
+                    mattered.</span></h2>
+            <div class="cs-work-grid">
+                <div class="cs-work-block">
+                    <h3>Ownership</h3>
+                    <p>Everything moved to founder-controlled systems. No more agency dependency.</p>
+                </div>
+                <div class="cs-work-block">
+                    <h3>Developer experience</h3>
+                    <p>Clear setup. No production hacks. Onboarding a new developer takes hours, not days.</p>
+                </div>
+                <div class="cs-work-block">
+                    <h3>Infrastructure</h3>
+                    <p>Staging and production separated. Deployments automated.</p>
+                </div>
+                <div class="cs-work-block">
+                    <h3>Systems</h3>
+                    <p>Slack, Linear, Confluence. Clear workflows replaced chaos.</p>
+                </div>
+                <div class="cs-work-block">
+                    <h3>Cost &amp; focus</h3>
+                    <p>Removed unnecessary layers. Focused only on high-impact work.</p>
+                </div>
+                <div class="cs-work-block">
+                    <h3>Beyond engineering</h3>
+                    <p>GTM, onboarding, positioning. Not just code.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. TRANSFORMATION -->
+    <section class="cs-section cs-section--alt">
+        <div class="container">
+            <p class="cs-section-label">What changed</p>
+            <div class="cs-transform">
+                <div class="cs-transform-col cs-transform-col--before">
+                    <p class="cs-transform-label">Before</p>
+                    <ul>
+                        <li>Fragile MVP</li>
+                        <li>Unclear direction</li>
+                        <li>High burn</li>
+                        <li>No ownership</li>
+                        <li>Reactive chaos</li>
+                    </ul>
+                </div>
+                <div class="cs-transform-divider" aria-hidden="true">&rarr;</div>
+                <div class="cs-transform-col cs-transform-col--after">
+                    <p class="cs-transform-label">After</p>
+                    <ul>
+                        <li>Stable system</li>
+                        <li>Clear workflows</li>
+                        <li>Predictable costs</li>
+                        <li>Internal team enabled</li>
+                        <li>Full ownership</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline strip -->
+    <section class="cs-timeline-section">
+        <div class="container">
+            <ol class="cs-timeline">
+                <li>
+                    <span class="cs-timeline-when">Month 1</span>
+                    <span class="cs-timeline-what">Stabilization & cleanup</span>
+                </li>
+                <li>
+                    <span class="cs-timeline-when">Month 3</span>
+                    <span class="cs-timeline-what">Systems & workflows in place</span>
+                </li>
+                <li>
+                    <span class="cs-timeline-when">Month 8</span>
+                    <span class="cs-timeline-what">Stable, scalable product</span>
+                </li>
+            </ol>
+        </div>
+    </section>
+
+    <!-- 6. THE SHIFT -->
+    <section class="cs-section cs-section--dark">
+        <div class="container">
+            <p class="cs-section-label cs-section-label--light">The shift</p>
+            <h2 class="cs-statement cs-statement--center">This wasn&rsquo;t a technical fix. <span
+                    class="cs-gray-dark">It was an operational shift.</span></h2>
+            <p class="cs-shift-sub">From reacting to problems &rarr; to running a structured product system.</p>
+        </div>
+    </section>
+
+    <!-- 7. PROOF -->
+    <section class="cs-section">
+        <div class="container">
+            <blockquote class="cs-quote">
+                <p>&ldquo;Divya transformed a complex, distributed codebase into a stable, reliable foundation&hellip;
+                    and
+                    played a pivotal role as our Fractional CTO beyond engineering.&rdquo;</p>
+                <footer class="cs-quote-by">Lydia, co-founder & CEO, Quik Referral</footer>
+            </blockquote>
+        </div>
+    </section>
+
+    <!-- 8. WHO THIS IS FOR -->
+    <section class="cs-section cs-section--alt">
+        <div class="container">
+            <div class="cs-fit">
+                <div class="cs-fit-col">
+                    <h3 class="cs-fit-heading">This is a fit for you if</h3>
+                    <ul class="cs-fit-list">
+                        <li>You&rsquo;ve built something, but it&rsquo;s messy</li>
+                        <li>You&rsquo;re dependent on an agency</li>
+                        <li>You don&rsquo;t fully understand your system</li>
+                        <li>You&rsquo;re stuck and the path forward feels unclear.</li>
+                    </ul>
+                </div>
+                <div class="cs-fit-col">
+                    <h3 class="cs-fit-heading cs-fit-heading--muted">Not for</h3>
+                    <ul class="cs-fit-list cs-fit-list--muted">
+                        <li>&ldquo;Just build what I say&rdquo; projects</li>
+                        <li>Low-trust engagements</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. CTA -->
+    <section class="cs-cta">
+        <div class="container">
+            <h2 class="cs-cta-title">Have something built <span class="text-gray">but not under control?</span></h2>
+            <a href="https://calendly.com/hey-kerneltheory/30min" target="_blank" class="btn btn-dark"> Schedule your
+                free discovery call now <i class="arrow-icon">&nearr;</i></a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-cta">
+                    <p class="footer-cta-label">Contact</p>
+                    <h2>Let's start<br>building together</h2>
+                    <a href="https://calendly.com/hey-kerneltheory/30min" target="_blank" class="btn btn-light">Let's
+                        talk <i class="arrow-icon">&nearr;</i></a>
+                </div>
+                <nav class="footer-nav">
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/#story">About</a></li>
+                        <li><a href="mailto:hey@kerneltheory.com">Contact</a></li>
+                    </ul>
+                </nav>
+                <nav class="footer-nav footer-social">
+                    <ul>
+                        <!-- <li><a href="#" target="_blank">Twitter <i class="arrow-icon">&nearr;</i></a></li> -->
+                        <li><a href="https://www.linkedin.com/in/abhinaykumar21/" target="_blank">LinkedIn <i class="arrow-icon">&nearr;</i></a></li>
+                        <!-- <li><a href="#" target="_blank">Instagram <i class="arrow-icon">&nearr;</i></a></li> -->
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer-bottom">
+                <span>&copy; <span id="copyright-year"></span> KernelTheory. All rights reserved.</span>
+                <div class="footer-policies">
+                    <a data-modal="termsModal">Terms of Service</a>
+                    <a data-modal="privacyModal">Privacy Policy</a>
+                    <a data-modal="refundModal">Refund Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

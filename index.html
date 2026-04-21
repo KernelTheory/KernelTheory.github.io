@@ -4,15 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KernelTheory - AI Software Consulting</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <title>KernelTheory — Boutique Software Studio</title>
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css?v=32">
 </head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-WLSPG4KE3Q"></script>
@@ -20,477 +18,525 @@
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
-
     gtag('config', 'G-WLSPG4KE3Q');
 </script>
 
 <body>
-    <!-- Animated Background Grid -->
-    <div class="bg-grid"></div>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container d-flex justify-content-between align-items-center">
-            <a class="navbar-brand" href="#">
-                <div class="brand-text">Kernel<span class="brand-accent">Theory</span></div>
+    <nav class="navbar">
+        <div class="container">
+            <a href="/" class="nav-logo">
+                Kernel Theory
             </a>
-            <div class="nav-cta">
-                <a href="#contact" class="btn btn-glow">Let's Build</a>
+            <div class="nav-links" id="navLinks">
+                <a href="#services">Services</a>
+                <a href="#case-studies">Work</a>
+                <a href="https://calendly.com/hey-kerneltheory/30min" target="_blank"
+                    class="btn btn-dark nav-cta-mobile" style="display:none;">Let's
+                    talk <i class="arrow-icon">&nearr;</i></a>
             </div>
+            <div class="nav-actions">
+                <button type="button" class="nav-email" data-email="hey@kerneltheory.com"
+                    aria-label="Copy email address hey@kerneltheory.com">
+                    <span class="nav-email-default">hey@kerneltheory.com</span>
+                    <span class="nav-email-copied">Copied <i class="check-icon" aria-hidden="true">✓</i></span>
+                </button>
+                <a href="https://calendly.com/hey-kerneltheory/30min" target="_blank" class="btn btn-dark nav-cta">Let's
+                    talk <i class="arrow-icon">&nearr;</i></a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Hero -->
     <section class="hero">
         <div class="container">
-            <div class="row align-items-stretch">
-                <div class="col-lg-6 hero-content">
-                    <div class="hero-badge">
-                        <span class="pulse-dot"></span>
-                        <span>AI-First Development Studio</span>
-                    </div>
-                    <h1>We Build the <span class="gradient-text">Feature</span> <br>You Imagine</h1>
-                    <p class="lead">Young minds. Bold ideas. Battle-tested code.<br>
-                        From <span class="highlight-text">rapid MVPs</span> to <span
-                            class="highlight-text">production-grade systems</span> — we ship 60% faster with AI.</p>
-                    <div class="hero-stats">
-                        <div class="stat-item">
-                            <span class="stat-number">60%</span>
-                            <span class="stat-label">Faster Delivery</span>
+            <p class="hero-tag">Product & engineering &middot; for early-stage founders </p>
+            <h1>From messy ideas or broken products <span class="text-gray">to clear, working systems</span></h1>
+            <p class="hero-subtext">We help early-stage founders figure out what to build, fix what's not working, and
+                ship systems they fully understand and own.</p>
+            <div class="hero-cta-row">
+                <a href="https://calendly.com/hey-kerneltheory/30min" target="_blank"
+                    class="btn btn-dark hero-cta">Start
+                    with a discovery call <i class="arrow-icon">&nearr;</i></a>
+                <div class="hero-logos" aria-label="Clients we've worked with">
+                    <div class="hero-logos-track">
+                        <div class="client-logo"><img src="images/client-1-logo.png" alt="IIHS"></div>
+                        <div class="client-logo"><span class="client-logo--text client-logo--mymakaan">MyMakaan</span>
                         </div>
-                        <div class="stat-divider"></div>
-                        <div class="stat-item">
-                            <span class="stat-number">24/7</span>
-                            <span class="stat-label">AI-Powered</span>
+                        <div class="client-logo"><img src="images/client-2-logo.png" alt="MyCaptain"></div>
+                        <div class="client-logo"><img src="images/client-3-logo.png" alt="Quik Referral"
+                                class="client-logo--quik"></div>
+                        <div class="client-logo"><span class="client-logo--text client-logo--appc8">AppC8</span></div>
+                        <div class="client-logo client-logo--mad"><img src="images/manaba-footer.png"
+                                alt="Mad About Digital"></div>
+                        <!-- duplicate set for seamless loop -->
+                        <div class="client-logo" aria-hidden="true"><img src="images/client-1-logo.png" alt=""></div>
+                        <div class="client-logo" aria-hidden="true"><span
+                                class="client-logo--text client-logo--mymakaan">MyMakaan</span>
                         </div>
-                        <div class="stat-divider"></div>
-                        <div class="stat-item">
-                            <span class="stat-number">0</span>
-                            <span class="stat-label">Hidden Costs</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6" id="contact">
-                    <div class="hero-form">
-                        <div class="form-header compact">
-                            <h3><span class="form-icon-inline"><i class="bi bi-lightning-charge-fill"></i></span> Skip
-                                the Forms</h3>
-                            <p>Talk directly to our builders</p>
-                        </div>
-                        <div class="social-grid">
-                            <a href="https://calendly.com/hey-kerneltheory/30min" target="_blank"
-                                class="social-card calendar">
-                                <i class="bi bi-calendar-check"></i>
-                                <span>Book a Call</span>
-                                <small>15min Discovery</small>
-                            </a>
-                            <a href="mailto:hey@kerneltheory.com?subject=Lets%20talk&body=Hi%20Team%20KernelTheory,%0A%0ALooks%20like%20you%20are%20our%20best%20option%20to%20build%20something%20amazing.%20let's%20connect?"
-                                class="social-card email">
-                                <i class="bi bi-envelope"></i>
-                                <span>Send Email</span>
-                                <small>Quick Response</small>
-                            </a>
-                        </div>
-                        <div class="free-offer">
-                            <div class="offer-badge"><i class="bi bi-gift-fill"></i> FREE</div>
-                            <h4>Discovery Report</h4>
-                            <p>Get your first product discovery report on us. We'll refine your idea, plan your MVP, and
-                                give you clarity on execution & timeline — <strong>no strings attached.</strong></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Floating Elements -->
-        <div class="floating-shapes">
-            <div class="shape shape-1"></div>
-            <div class="shape shape-2"></div>
-            <div class="shape shape-3"></div>
-        </div>
-    </section>
-
-    <!-- Clients Section -->
-    <section class="clients">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Trusted By</span>
-                <h2>Clients Who <span class="gradient-text">Believe</span></h2>
-            </div>
-            <div class="client-ticker" aria-label="Client logos">
-                <div class="client-ticker-track">
-                    <div class="client-ticker-group">
-                        <div class="client-logo">
-                            <img src="images/client-1-logo.png" alt="IIHS" class="client-image client-image--light-grey">
-                        </div>
-                        <div class="client-logo client-logo--text">AppC8</div>
-                        <div class="client-logo">
-                            <img src="images/manaba-footer.png" alt="Mad" class="client-image client-image--manaba">
-                        </div>
-                        <div class="client-logo">
-                            <img src="images/client-3-logo.png" alt="Quik Referral" class="client-image">
-                        </div>
-                        <div class="client-logo">
-                            <img src="images/client-2-logo.png" alt="MyCaptain" class="client-image">
-                        </div>
-                        <div class="client-logo client-logo--text">MyMakaan</div>
-                    </div>
-                    <div class="client-ticker-group" aria-hidden="true">
-                        <div class="client-logo">
-                            <img src="images/client-1-logo.png" alt="" class="client-image client-image--light-grey" decoding="async">
-                        </div>
-                        <div class="client-logo client-logo--text">AppC8</div>
-                        <div class="client-logo">
-                            <img src="images/manaba-footer.png" alt="" class="client-image client-image--manaba" decoding="async">
-                        </div>
-                        <div class="client-logo">
-                            <img src="images/client-3-logo.png" alt="" class="client-image" decoding="async">
-                        </div>
-                        <div class="client-logo">
-                            <img src="images/client-2-logo.png" alt="" class="client-image" decoding="async">
-                        </div>
-                        <div class="client-logo client-logo--text">MyMakaan</div>
+                        <div class="client-logo" aria-hidden="true"><img src="images/client-2-logo.png" alt=""></div>
+                        <div class="client-logo" aria-hidden="true"><img src="images/client-3-logo.png" alt=""
+                                class="client-logo--quik"></div>
+                        <div class="client-logo" aria-hidden="true"><span
+                                class="client-logo--text client-logo--appc8">AppC8</span></div>
+                        <div class="client-logo client-logo--mad" aria-hidden="true"><img src="images/manaba-footer.png"
+                                alt=""></div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Why Us Section -->
-    <section class="why-us">
+    <!-- What we do -->
+    <section class="what-we-do" id="services">
         <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Why KernelTheory</span>
-                <h2>Young. Bold. <span class="gradient-text">Relentless.</span></h2>
-                <p class="section-subtitle">We're not another consulting firm. We're builders who happen to consult.</p>
-            </div>
-            <div class="why-grid">
-                <div class="why-card">
-                    <div class="why-icon">
-                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M13 2L3 14H12L11 22L21 10H12L13 2Z" fill="currentColor" />
-                        </svg>
+            <p class="services-label">What we do</p>
+            <h2 class="what-we-do-heading">A focused set of engagements <span class="text-gray">— built for founders who
+                    want clarity, ownership, and systems that actually work.</span></h2>
+
+            <div class="service-cards">
+                <!-- 1. AI integration -->
+                <article class="service-card service-card--ai" data-color="orange">
+                    <div class="service-card-icon" aria-hidden="true">
+                        <img src="images/brain-cpu.png" alt="" />
                     </div>
-                    <h3>AI-Native Workflow</h3>
-                    <p>We don't just use AI — we think in AI. Every line of code is supercharged with intelligent
-                        automation.</p>
-                </div>
-                <div class="why-card">
-                    <div class="why-icon">
-                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M12 2L2 7L12 12L22 7L12 2Z" fill="currentColor" />
-                            <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
-                            <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
-                        </svg>
+                    <div class="service-card-text-wrapper">
+                        <h3 class="service-card-title">Integrate AI into your product</h3>
+                        <p class="service-card-text">Agentic systems integration and automation tailored to how you
+                            ship.
+                        </p>
                     </div>
-                    <h3>Full-Stack Mastery</h3>
-                    <p>Frontend, backend, infra, ML pipelines — we own the entire stack. No handoffs, no excuses.</p>
-                </div>
-                <div class="why-card">
-                    <div class="why-icon">
-                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" />
-                            <path d="M12 6V12L16 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
-                        </svg>
+                </article>
+
+                <!-- 2. Web + Mobile -->
+                <article class="service-card service-card--web" data-color="yellow">
+                    <div class="service-card-icon" aria-hidden="true">
+                        <img src="images/web-app.png" alt="" />
                     </div>
-                    <h3>Ship Fast, Ship Right</h3>
-                    <p>Working prototype in 4 weeks. Production-ready in 8. We move at startup speed with enterprise
-                        quality.</p>
-                </div>
-                <div class="why-card">
-                    <div class="why-icon">
-                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM10 17L5 12L6.41 10.59L10 14.17L17.59 6.58L19 8L10 17Z"
-                                fill="currentColor" />
-                        </svg>
+                    <div class="service-card-text-wrapper">
+                        <h3 class="service-card-title">Web and mobile app development</h3>
+                        <p class="service-card-text">Full-stack web and native or cross-platform mobile—from first
+                            release through scale.</p>
                     </div>
-                    <h3>Transparent Always</h3>
-                    <p>Fixed pricing. Weekly demos. Direct access to engineers. We believe trust is built through
-                        openness.</p>
-                </div>
+                </article>
+
+                <!-- 3. Fix vibe-coded apps -->
+                <article class="service-card service-card--vibe" data-color="cyan">
+                    <div class="service-card-icon" aria-hidden="true">
+                        <img src="images/vibe-app.png" alt="" />
+                    </div>
+                    <div class="service-card-text-wrapper">
+                        <h3 class="service-card-title">Fix vibe-coded applications</h3>
+                        <p class="service-card-text">Stabilize rushed builds, refactor safely, and make releases
+                            predictable.</p>
+                    </div>
+                </article>
+
+                <!-- 4. Product Discovery report -->
+                <article class="service-card service-card--discovery" data-color="purple">
+                    <div class="service-card-icon" aria-hidden="true">
+                        <img src="images/product-research.png" alt="" />
+                    </div>
+                    <div class="service-card-text-wrapper">
+                        <h3 class="service-card-title">Product discovery report</h3>
+                        <p class="service-card-text">Structured research and a clear view on what to build next.</p>
+                    </div>
+                </article>
+
+                <!-- 5. Fractional CTO / CPO -->
+                <article class="service-card service-card--fractional" data-color="red">
+                    <div class="service-card-icon" aria-hidden="true">
+                        <img src="images/cto-cpo.png" alt="" />
+                    </div>
+                    <div class="service-card-text-wrapper">
+                        <h3 class="service-card-title">Fractional CTO / CPO</h3>
+                        <p class="service-card-text">Embedded leadership for roadmap, architecture, and team execution.
+                        </p>
+                    </div>
+                </article>
+
+                <!-- 6. Automation & workflow -->
+                <article class="service-card service-card--devops" data-color="green">
+                    <div class="service-card-icon" aria-hidden="true">
+                        <img src="images/automation.png" alt="" />
+                    </div>
+                    <div class="service-card-text-wrapper">
+                        <h3 class="service-card-title">Set up automation and workflow</h3>
+                        <p class="service-card-text">Pipelines and Integrations with Claude
+                            Cowork, OpenAI agent builder, n8n, Zapier, and similar tools.
+                        </p>
+                    </div>
+                </article>
+
+                <!-- 7. Browser extensions -->
+                <article class="service-card service-card--extension" data-color="violet">
+                    <div class="service-card-icon" aria-hidden="true">
+                        <img src="images/browser-extension.png" alt="" />
+                    </div>
+                    <div class="service-card-text-wrapper">
+                        <h3 class="service-card-title">Browser extensions</h3>
+                        <p class="service-card-text">Extensions for Chrome, Edge, and Firefox that fit your product.</p>
+                    </div>
+                </article>
+
+                <!-- 8. Data engineering & analytics -->
+                <article class="service-card service-card--data" data-color="blue-dark">
+                    <div class="service-card-icon" aria-hidden="true">
+                        <img src="images/data-analytics.png" alt="" />
+                    </div>
+                    <div class="service-card-text-wrapper">
+                        <h3 class="service-card-title">Data engineering and analytics</h3>
+                        <p class="service-card-text">Pipelines, models, and reporting your team can actually use.</p>
+                    </div>
+                </article>
+
+                <!-- 9. GTM -->
+                <article class="service-card service-card--gtm" data-color="orange-deep">
+                    <div class="service-card-icon" aria-hidden="true">
+                        <img src="images/gtm-strategy.png" alt="" />
+                    </div>
+                    <div class="service-card-text-wrapper">
+                        <h3 class="service-card-title">Go-to-market strategy</h3>
+                        <p class="service-card-text">Positioning, experiments, and rollout support from plan to
+                            execution.</p>
+                    </div>
+                </article>
             </div>
         </div>
     </section>
 
-    <!-- Tech Stack Visual -->
-    <section class="tech-stack">
+    <!-- Designing Success / Case Studies Intro -->
+    <!-- <section class="intro-section">
         <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Our Arsenal</span>
-                <h2>Cutting-Edge <span class="gradient-text">Tech Stack</span></h2>
-            </div>
-            <div class="tech-marquee">
-                <div class="tech-track">
-                    <div class="tech-item"><i class="devicon-ruby-plain"></i> Ruby</div>
-                    <div class="tech-item"><i class="devicon-rails-plain"></i> Rails</div>
-                    <div class="tech-item"><img src="images/APP_ICON_2D_LIGHT.png" alt="Cursor" class="tech-logo">
-                        Cursor</div>
-                    <div class="tech-item"><i class="bi bi-stars"></i> Claude</div>
-                    <div class="tech-item">GPT</div>
-                    <div class="tech-item"><i class="devicon-google-plain"></i> Gemini</div>
-                    <div class="tech-item"><i class="devicon-amazonwebservices-plain-wordmark"></i> AWS</div>
-                    <div class="tech-item"><i class="devicon-azure-plain"></i> Azure</div>
-                    <div class="tech-item"><i class="devicon-googlecloud-plain"></i> GCP</div>
-                    <div class="tech-item"><i class="devicon-docker-plain"></i> Docker</div>
-                    <div class="tech-item"><i class="devicon-postgresql-plain"></i> PostgreSQL</div>
-                    <div class="tech-item"><i class="devicon-python-plain"></i> Python</div>
-                    <!-- Duplicate for seamless loop -->
-                    <div class="tech-item"><i class="devicon-ruby-plain"></i> Ruby</div>
-                    <div class="tech-item"><i class="devicon-rails-plain"></i> Rails</div>
-                    <div class="tech-item"><img src="images/APP_ICON_2D_LIGHT.png" alt="Cursor" class="tech-logo">
-                        Cursor</div>
-                    <div class="tech-item"><i class="bi bi-stars"></i> Claude</div>
-                    <div class="tech-item"><svg class="tech-logo" viewBox="0 0 62 62" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M30.6 0C13.77 0 0 13.77 0 30.6C0 47.43 13.77 61.2 30.6 61.2C47.43 61.2 61.2 47.515 61.2 30.6C61.2 13.685 47.515 0 30.6 0ZM30.6 50.235C20.145 50.235 11.73 41.65 11.73 30.6C11.73 19.55 20.145 10.965 30.6 10.965C41.055 10.965 49.47 19.55 49.47 30.6C49.47 41.65 41.055 50.235 30.6 50.235Z"
-                                fill="currentColor" />
-                        </svg> OpenAI</div>
-                    <div class="tech-item"><i class="devicon-google-plain"></i> Gemini</div>
+            <div class="intro-layout">
+                <span class="intro-label">Designing Success</span>
+                <p class="intro-text">From chaos → clarity → working product <span class="text-gray">Real examples of
+                        products we helped structure, rebuild, and launch.</span></p>
+                <div class="intro-action">
+                    <a href="work.html" class="btn btn-outline">Our Work <i class="arrow-icon">&nearr;</i></a>
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
-    <!-- Process Section -->
-    <section id="process" class="process">
+
+    <!-- How we help -->
+    <section class="how-we-help">
         <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Our Process</span>
-                <h2>How We <span class="gradient-text">Deliver</span></h2>
-                <p class="section-subtitle">Transparent collaboration from day one. No black boxes.</p>
+            <div class="hwh-header">
+                <h2 class="hwh-title">How we help</h2>
+                <p class="what-we-do-heading" style="margin-bottom: 0;">Five phases we move through with founders
+                    &mdash; <span class="text-gray">whether you're starting from scratch or stabilizing something
+                        already broken.</span></p>
             </div>
 
-            <div class="process-timeline">
-                <div class="process-card">
-                    <div class="process-number">01</div>
-                    <div class="process-content">
-                        <h3>Discovery</h3>
-                        <p>We dig deep into your vision. What problem are you solving? Who's your user? We ask the hard
-                            questions so we build the right thing.</p>
+            <ol class="hwh-steps">
+                <li class="hwh-step">
+                    <span class="hwh-step-num">01</span>
+                    <div class="hwh-step-content">
+                        <h3 class="hwh-step-title">Figure out what to build</h3>
+                        <p class="hwh-step-desc">You don't need more features&mdash;you need clarity. We define what's
+                            worth building and what's not.</p>
+                        <p class="hwh-step-meta">Validation &middot; Scope &middot; Product direction</p>
                     </div>
-                </div>
-                <div class="process-card">
-                    <div class="process-number">02</div>
-                    <div class="process-content">
-                        <h3>Strategy</h3>
-                        <p>We map the fastest path to value. Tech stack, architecture, timeline — all designed to
-                            maximize impact within your budget.</p>
+                </li>
+
+                <li class="hwh-step">
+                    <span class="hwh-step-num">02</span>
+                    <div class="hwh-step-content">
+                        <h3 class="hwh-step-title">Fix what's already broken</h3>
+                        <p class="hwh-step-desc">Stabilize your existing system before adding anything new.</p>
+                        <p class="hwh-step-meta">Codebase &middot; Ownership &middot; Infrastructure</p>
                     </div>
-                </div>
-                <div class="process-card">
-                    <div class="process-number">03</div>
-                    <div class="process-content">
-                        <h3>Build</h3>
-                        <p>AI-accelerated development with weekly demos. You see progress in real-time, not after months
-                            of silence.</p>
+                </li>
+
+                <li class="hwh-step">
+                    <span class="hwh-step-num">03</span>
+                    <div class="hwh-step-content">
+                        <h3 class="hwh-step-title">Build only what matters</h3>
+                        <p class="hwh-step-desc">Once the foundation is stable, we build with structure and intent.</p>
+                        <p class="hwh-step-meta">MVP &middot; Features &middot; Systems</p>
                     </div>
-                </div>
-                <div class="process-card">
-                    <div class="process-number">04</div>
-                    <div class="process-content">
-                        <h3>Launch</h3>
-                        <p>We don't just deploy and disappear. We help you scale, iterate, and win in the market.</p>
+                </li>
+
+                <li class="hwh-step">
+                    <span class="hwh-step-num">04</span>
+                    <div class="hwh-step-content">
+                        <h3 class="hwh-step-title">Remove manual work</h3>
+                        <p class="hwh-step-desc">Automate what slows you down so the system can scale.</p>
+                        <p class="hwh-step-meta">Workflows &middot; Integrations &middot; Ops</p>
                     </div>
-                </div>
-            </div>
+                </li>
+
+                <li class="hwh-step">
+                    <span class="hwh-step-num">05</span>
+                    <div class="hwh-step-content">
+                        <h3 class="hwh-step-title">Stay involved</h3>
+                        <p class="hwh-step-desc">We don't disappear after delivery&mdash;we help you run the system.</p>
+                        <p class="hwh-step-meta">Ongoing support &middot; Product thinking &middot; Tech leadership</p>
+                    </div>
+                </li>
+            </ol>
         </div>
     </section>
 
-    <!-- Team Section -->
-    <section class="founders">
+    <!-- Featured Case Studies -->
+    <section class="featured-cases" id="case-studies">
         <div class="container">
-            <div class="section-header">
-                <span class="section-tag">The Team</span>
-                <h2>Built by <span class="gradient-text">Builders</span></h2>
-                <p class="section-subtitle">A tight-knit crew of engineers, designers, and dreamers.<br>Friends first.
-                    Colleagues second.</p>
+            <div class="featured-cases-header">
+                <p class="services-label">Case studies</p>
+                <h2 class="what-we-do-heading" style="margin-bottom: 0;">We partner with the team, ideate, structure,
+                    and ship products that were
+                    <span class="text-gray">vague, messy, or going nowhere.</span>
+                </h2>
             </div>
-            <div class="team-vibe">
-                <div class="vibe-card">
-                    <i class="bi bi-rocket-takeoff"></i>
-                    <span>Startup DNA</span>
-                </div>
-                <div class="vibe-card">
-                    <i class="bi bi-heart-fill"></i>
-                    <span>Passion-Driven</span>
-                </div>
-                <div class="vibe-card">
-                    <i class="bi bi-stars"></i>
-                    <span>Always Learning</span>
-                </div>
-                <div class="vibe-card">
-                    <i class="bi bi-lightning-fill"></i>
-                    <span>Ship Daily</span>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- CTA Section -->
-    <section class="cta-section">
-        <div class="container">
-            <div class="cta-content">
-                <h2>Ready to Build Something <span class="gradient-text">Amazing?</span></h2>
-                <p>Let's turn your idea into reality. No pitch decks needed — just a conversation.</p>
-                <a href="https://calendly.com/hey-kerneltheory/30min" target="_blank" class="btn btn-glow btn-lg">
-                    <i class="bi bi-calendar-check"></i>
-                    Book Your Free Call
+            <div class="featured-cases-grid" style="grid-template-columns: minmax(0, 820px); justify-content: center;">
+                <!-- Featured case -->
+                <a href="quik-referral.html" class="fcase fcase--hero">
+                    <div class="fcase-thumb fcase-thumb--visual"
+                        style="background:#fff; display:flex; align-items:center; justify-content:center;"
+                        aria-hidden="true">
+                        <img src="images/quik-referral-hero.png" alt=""
+                            style="max-width:60%; max-height:75%; object-fit:contain; display:block;">
+                    </div>
+                    <div class="fcase-body">
+                        <span class="fcase-tag">Fixing a broken MVP</span>
+                        <p class="fcase-client">Quik Referral</p>
+                        <h3 class="fcase-title"> From a fragile MVP <span class="text-gray">&rarr; to a system the
+                                founders could control.</span></h3>
+                        <dl class="fcase-ba">
+                            <dt class="fcase-ba-label">Before</dt>
+                            <dd class="fcase-ba-text fcase-ba-text--before">Messy codebase, no ownership, high burn</dd>
+                            <dt class="fcase-ba-label">After</dt>
+                            <dd class="fcase-ba-text fcase-ba-text--after">Stable system, clear workflows, internal team
+                                enabled</dd>
+                        </dl>
+                        <span class="fcase-link">View case study <i class="arrow-icon">&nearr;</i></span>
+                    </div>
                 </a>
+
+                <!-- Supporting cases -->
+                <!--
+                <div class="fcase-side">
+                    <a href="work.html" class="fcase fcase--sm">
+                        <div class="fcase-thumb fcase-thumb--light"></div>
+                        <div class="fcase-body">
+                            <span class="fcase-tag">Built from scratch</span>
+                            <h4 class="fcase-sm-title">Enterprise HRMS platform</h4>
+                            <p class="fcase-sm-sub">Built a system tailored to replace rigid off-the-shelf tools</p>
+                        </div>
+                    </a>
+                    <a href="work.html" class="fcase fcase--sm">
+                        <div class="fcase-thumb fcase-thumb--light"></div>
+                        <div class="fcase-body">
+                            <span class="fcase-tag">MVP + Strategy</span>
+                            <h4 class="fcase-sm-title">Home maintenance platform</h4>
+                            <p class="fcase-sm-sub">Shifted from unclear idea &rarr; focused MVP + B2B direction</p>
+                        </div>
+                    </a>
+                </div>
+                -->
+
+            </div>
+
+            <!-- <div class="featured-cases-footer">
+                <a href="work.html" class="btn btn-outline">Explore more case studies <i
+                        class="arrow-icon">&nearr;</i></a>
+            </div> -->
+        </div>
+    </section>
+
+    <section class="our-story">
+        <div class="container">
+            <div class="featured-cases-header">
+                <h2 class="featured-cases-title"><span class="text-gray">Our Story</span></h2>
+
+            </div>
+            <div class="story-content">
+                <p>KernelTheory was born from a simple observation: Most teams either build fast without thinking, or
+                    think endlessly without building.
+                    We’ve seen both fail. So we built Kernel Theory to sit in the middle.</p>
+                <p>Between us, Abhinay and Divya have spent over a decade in the trenches of technology — Abhinay rising
+                    from software engineer to VP of Engineering, Divya from software to Head of Product. We've scaled
+                    teams, shipped products, and navigated the messy reality of building things that matter.</p>
+                <p>Somewhere along the way, we realized we could create far more impact as partners — working closely
+                    with founders, shaping ideas from the ground up, and staying in the room from strategy through
+                    delivery. Not as vendors. As collaborators who genuinely care about the outcome.</p>
+                <p>That's what KernelTheory is. A studio small enough to care, experienced enough to deliver, and honest
+                    enough to tell you what you actually need — even when it's not what you expected to hear.
+                    We don’t just ship products. We leave you with a system you understand and can run.</p>
             </div>
         </div>
     </section>
 
-    <!-- Terms & Policies Section -->
-    <section class="policies">
+    <!-- <section class="services">
         <div class="container">
-            <div class="policies-grid">
-                <div class="policy-item" data-bs-toggle="modal" data-bs-target="#termsModal">
-                    <i class="bi bi-file-text"></i>
-                    <span>Terms of Service</span>
+            <p class="services-label">Who is this for</p>
+
+            <div class="service-item">
+                <div class="service-header">
+                    <h3>You have an idea but don’t know what to build</h3>
                 </div>
-                <div class="policy-item" data-bs-toggle="modal" data-bs-target="#privacyModal">
-                    <i class="bi bi-shield-check"></i>
-                    <span>Privacy Policy</span>
+            </div>
+            <div class="service-item">
+                <div class="service-header">
+                    <h3>You’ve started building but are stuck</h3>
                 </div>
-                <div class="policy-item" data-bs-toggle="modal" data-bs-target="#refundModal">
-                    <i class="bi bi-arrow-repeat"></i>
-                    <span>Refund Policy</span>
+            </div>
+            <div class="service-item">
+
+                <div class="service-header">
+                    <h3>You worked with an agency and things got messy</h3>
+                </div>
+            </div>
+            <div class="service-item">
+                <div class="service-header">
+                    <h3>You want to actually understand and own your product</h3>
+                </div>
+            </div>
+            <p class="services-label">Not for</p>
+
+            <div class="service-item">
+                <div class="service-header">
+                    <h3>“Just build what I say” projects</h3>
+                </div>
+            </div>
+            <div class="service-item">
+                <div class="service-header">
+                    <h3>low-trust relationships</h3>
+                </div>
+            </div>
+            <div class="service-item">
+                <div class="service-header">
+                    <h3>teams unwilling to collaborate</h3>
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer" id="contact">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <span class="brand-text">Kernel<span class="brand-accent">Theory</span></span>
-                    <p>We ❤️ to build products that people need</p>
+            <div class="footer-top">
+                <div class="footer-cta">
+                    <p class="footer-cta-label">Contact</p>
+                    <h2>Let's start<br>building together</h2>
+                    <a href="https://calendly.com/hey-kerneltheory/30min" target="_blank" class="btn btn-light">Let's
+                        talk <i class="arrow-icon">&nearr;</i></a>
                 </div>
-                <div class="footer-links">
-                    <a href="mailto:hey@kerneltheory.com">hey@kerneltheory.com</a>
-                </div>
+                <nav class="footer-nav">
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="#story">About</a></li>
+                        <li><a href="mailto:hey@kerneltheory.com">Contact</a></li>
+                    </ul>
+                </nav>
+                <nav class="footer-nav footer-social">
+                    <ul>
+                        <!-- <li><a href="#" target="_blank">Twitter <i class="arrow-icon">&nearr;</i></a></li> -->
+                        <li><a href="https://www.linkedin.com/in/abhinaykumar21/" target="_blank">LinkedIn <i class="arrow-icon">&nearr;</i></a></li>
+                        <!-- <li><a href="#" target="_blank">Instagram <i class="arrow-icon">&nearr;</i></a></li> -->
+                    </ul>
+                </nav>
             </div>
             <div class="footer-bottom">
-                <span>© <span id="copyright-year"></span> KernelTheory. All rights reserved.</span>
+                <span>&copy; <span id="copyright-year"></span> KernelTheory. All rights reserved.</span>
+                <div class="footer-policies">
+                    <a data-modal="termsModal">Terms of Service</a>
+                    <a data-modal="privacyModal">Privacy Policy</a>
+                    <a data-modal="refundModal">Refund Policy</a>
+                </div>
             </div>
         </div>
     </footer>
 
     <!-- Terms Modal -->
-    <div class="modal fade" id="termsModal" tabindex="-1">
-        <div class="modal-dialog modal-lg modal-dialog-scrollable">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Terms of Service</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-                <div class="modal-body">
-                    <h6>1. Services</h6>
-                    <p>KernelTheory provides software consulting, development, and related technology services. By
-                        engaging our services, you agree to these terms.</p>
-                    <h6>2. Project Scope</h6>
-                    <p>All project deliverables, timelines, and costs will be agreed upon in writing before work begins.
-                        Changes to scope may affect timeline and pricing.</p>
-                    <h6>3. Intellectual Property</h6>
-                    <p>Upon full payment, all custom code and deliverables created for your project become your
-                        property. We retain rights to general methodologies and pre-existing tools.</p>
-                    <h6>4. Confidentiality</h6>
-                    <p>We treat all client information as confidential. We will not share your business information,
-                        code, or data with third parties without your consent.</p>
-                    <h6>5. Payment Terms</h6>
-                    <p>Payment terms are outlined in individual project agreements. Late payments may result in project
-                        delays or suspension.</p>
-                    <h6>6. Limitation of Liability</h6>
-                    <p>Our liability is limited to the total amount paid for services. We are not liable for indirect,
-                        incidental, or consequential damages.</p>
-                    <h6>7. Termination</h6>
-                    <p>Either party may terminate with 14 days written notice. Payment is due for all work completed up
-                        to termination date.</p>
-                </div>
-            </div>
+    <div class="modal-overlay" id="termsModal">
+        <div class="modal-box">
+            <button class="modal-close">&times;</button>
+            <h2>Terms of Service</h2>
+            <h3>1. Services</h3>
+            <p>KernelTheory provides software consulting, development, and related technology services. By engaging our
+                services, you agree to these terms.</p>
+            <h3>2. Project Scope</h3>
+            <p>All project deliverables, timelines, and costs will be agreed upon in writing before work begins. Changes
+                to scope may affect timeline and pricing.</p>
+            <h3>3. Intellectual Property</h3>
+            <p>Upon full payment, all custom code and deliverables created for your project become your property. We
+                retain rights to general methodologies and pre-existing tools.</p>
+            <h3>4. Confidentiality</h3>
+            <p>We treat all client information as confidential. We will not share your business information, code, or
+                data with third parties without your consent.</p>
+            <h3>5. Payment Terms</h3>
+            <p>Payment terms are outlined in individual project agreements. Late payments may result in project delays
+                or suspension.</p>
+            <h3>6. Limitation of Liability</h3>
+            <p>Our liability is limited to the total amount paid for services. We are not liable for indirect,
+                incidental, or consequential damages.</p>
+            <h3>7. Termination</h3>
+            <p>Either party may terminate with 14 days written notice. Payment is due for all work completed up to
+                termination date.</p>
         </div>
     </div>
 
     <!-- Privacy Modal -->
-    <div class="modal fade" id="privacyModal" tabindex="-1">
-        <div class="modal-dialog modal-lg modal-dialog-scrollable">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Privacy Policy</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-                <div class="modal-body">
-                    <h6>Information We Collect</h6>
-                    <p>We collect information you provide directly: name, email, company details, and project
-                        requirements when you contact us or engage our services.</p>
-                    <h6>How We Use Information</h6>
-                    <p>We use your information to: provide services, communicate about projects, send relevant updates,
-                        and improve our offerings.</p>
-                    <h6>Data Security</h6>
-                    <p>We implement industry-standard security measures to protect your data. All communications are
-                        encrypted, and we use secure infrastructure.</p>
-                    <h6>Third-Party Services</h6>
-                    <p>We use analytics (Google Analytics) to understand website usage. We do not sell or share your
-                        personal data with third parties for marketing.</p>
-                    <h6>Your Rights</h6>
-                    <p>You have the right to access, correct, or delete your personal data. Contact us at
-                        hey@kerneltheory.com for any privacy-related requests.</p>
-                    <h6>Cookies</h6>
-                    <p>Our website uses essential cookies for functionality and analytics cookies to improve user
-                        experience. You can disable cookies in your browser settings.</p>
-                </div>
-            </div>
+    <div class="modal-overlay" id="privacyModal">
+        <div class="modal-box">
+            <button class="modal-close">&times;</button>
+            <h2>Privacy Policy</h2>
+            <h3>Information We Collect</h3>
+            <p>We collect information you provide directly: name, email, company details, and project requirements when
+                you contact us or engage our services.</p>
+            <h3>How We Use Information</h3>
+            <p>We use your information to: provide services, communicate about projects, send relevant updates, and
+                improve our offerings.</p>
+            <h3>Data Security</h3>
+            <p>We implement industry-standard security measures to protect your data. All communications are encrypted,
+                and we use secure infrastructure.</p>
+            <h3>Third-Party Services</h3>
+            <p>We use analytics (Google Analytics) to understand website usage. We do not sell or share your personal
+                data with third parties for marketing.</p>
+            <h3>Your Rights</h3>
+            <p>You have the right to access, correct, or delete your personal data. Contact us at hey@kerneltheory.com
+                for any privacy-related requests.</p>
+            <h3>Cookies</h3>
+            <p>Our website uses essential cookies for functionality and analytics cookies to improve user experience.
+                You can disable cookies in your browser settings.</p>
         </div>
     </div>
 
     <!-- Refund Modal -->
-    <div class="modal fade" id="refundModal" tabindex="-1">
-        <div class="modal-dialog modal-lg modal-dialog-scrollable">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Refund Policy</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-                <div class="modal-body">
-                    <h6>1. General Policy</h6>
-                    <p>All payments made to KernelTheory are <strong>non-refundable</strong> unless explicitly stated
-                        otherwise in a signed project agreement. By engaging our services, you acknowledge and accept
-                        this policy.</p>
-                    <h6>2. Discovery & Consultation</h6>
-                    <p>Initial discovery calls are complimentary. The free Discovery Report offer is limited to one per
-                        client and carries no obligation. Once paid work commences, no refunds apply.</p>
-                    <h6>3. Milestone-Based Projects</h6>
-                    <p>Payment for each milestone is due upon delivery. Once a milestone is approved (explicitly or by
-                        proceeding to the next phase), it is considered final and non-refundable. Silence or
-                        non-response within 7 business days of delivery constitutes acceptance.</p>
-                    <h6>4. Scope Changes & Revisions</h6>
-                    <p>Revisions are limited to the scope defined in the project agreement. Requests outside the
-                        original scope constitute new work and will be billed separately. We are not obligated to
-                        provide refunds for scope misunderstandings not documented in writing.</p>
-                    <h6>5. Project Cancellation</h6>
-                    <p>If you cancel a project mid-engagement, all payments made for completed and in-progress work are
-                        non-refundable. Any unused prepaid amounts may be applied to future work at our discretion, but
-                        are not refundable as cash.</p>
-                    <h6>6. Limitation of Liability</h6>
-                    <p>KernelTheory's total liability shall not exceed the amount paid for the specific deliverable in
-                        question. We are not liable for any indirect, incidental, consequential, or punitive damages,
-                        including lost profits, revenue, or business opportunities.</p>
-                    <h6>7. Disputes</h6>
-                    <p>All disputes must be raised in writing within 7 days of deliverable receipt. Disputes raised
-                        after this period will not be considered for any remediation or refund. Resolution is at
-                        KernelTheory's sole discretion.</p>
-                    <h6>8. Contact</h6>
-                    <p>For policy questions, contact hey@kerneltheory.com. This policy may be updated at any time
-                        without prior notice.</p>
-                </div>
-            </div>
+    <div class="modal-overlay" id="refundModal">
+        <div class="modal-box">
+            <button class="modal-close">&times;</button>
+            <h2>Refund Policy</h2>
+            <h3>1. General Policy</h3>
+            <p>All payments made to KernelTheory are <strong>non-refundable</strong> unless explicitly stated otherwise
+                in a signed project agreement.</p>
+            <h3>2. Discovery &amp; Consultation</h3>
+            <p>Initial discovery calls are complimentary. Once paid work commences, no refunds apply.</p>
+            <h3>3. Milestone-Based Projects</h3>
+            <p>Payment for each milestone is due upon delivery. Once a milestone is approved (explicitly or by
+                proceeding to the next phase), it is considered final and non-refundable.</p>
+            <h3>4. Scope Changes</h3>
+            <p>Revisions are limited to the scope defined in the project agreement. Requests outside the original scope
+                constitute new work and will be billed separately.</p>
+            <h3>5. Project Cancellation</h3>
+            <p>If you cancel a project mid-engagement, all payments made for completed and in-progress work are
+                non-refundable.</p>
+            <h3>6. Disputes</h3>
+            <p>All disputes must be raised in writing within 7 days of deliverable receipt. Resolution is at
+                KernelTheory's sole discretion.</p>
+            <h3>7. Contact</h3>
+            <p>For policy questions, contact hey@kerneltheory.com.</p>
         </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="main.js"></script>
 </body>
 
