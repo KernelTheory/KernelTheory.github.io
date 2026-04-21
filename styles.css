@@ -359,7 +359,6 @@ h6 {
     max-height: 56px;
     width: auto;
     object-fit: contain;
-    filter: grayscale(1);
     opacity: 0.7;
     transition: opacity 0.3s;
 }
@@ -369,7 +368,7 @@ h6 {
 }
 
 .client-logo--mad img {
-    filter: grayscale(1) drop-shadow(0 8px 20px rgba(0, 0, 0, 0.6)) drop-shadow(0 2px 6px rgba(0, 0, 0, 0.5));
+    filter: drop-shadow(0 8px 20px rgba(0, 0, 0, 0.6)) drop-shadow(0 2px 6px rgba(0, 0, 0, 0.5));
 }
 
 .client-logo img.client-logo--quik {
@@ -387,6 +386,19 @@ h6 {
 
 .client-logo--text:hover {
     opacity: 1;
+}
+
+.client-logo--text.client-logo--appc8,
+.client-logo--text.client-logo--mymakaan {
+    font-weight: 700;
+}
+
+.client-logo--text.client-logo--appc8 {
+    color: #dc2928;
+}
+
+.client-logo--text.client-logo--mymakaan {
+    color: #9ad5b5;
 }
 
 /* ---------- What we do / Service Cards ---------- */
@@ -411,7 +423,8 @@ h6 {
 
 .service-card {
     position: relative;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     align-items: stretch;
     border: 1.5px solid #d0d0d0;
     border-radius: 16px;
@@ -440,9 +453,9 @@ h6 {
     opacity: 1;
 }
 
-/* Icon container - 50% width */
+/* Equal halves (grid 1fr 1fr); text cell still white edge-to-edge */
 .service-card-icon {
-    flex: 0 0 50%;
+    min-width: 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -459,12 +472,11 @@ h6 {
     transition: transform 0.4s ease, color 0.35s ease;
 }
 
-/* Text container - 50% width */
 .service-card-text-wrapper {
-    flex: 0 0 50%;
+    min-width: 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     padding: 2rem 1.5rem;
     background: #fff;
 }
@@ -498,26 +510,9 @@ h6 {
     background: linear-gradient(135deg, rgba(251, 192, 45, 0.08) 0%, rgba(251, 192, 45, 0.04) 100%);
 }
 
-.service-card--web:hover .service-card-icon svg {
-    color: #fbc02d;
-}
-
-.service-card--mobile:hover {
-    border-color: #2196f3;
-    background: linear-gradient(135deg, rgba(33, 150, 243, 0.08) 0%, rgba(33, 150, 243, 0.04) 100%);
-}
-
-.service-card--mobile:hover .service-card-icon svg {
-    color: #2196f3;
-}
-
 .service-card--fractional:hover {
     border-color: #f44336;
     background: linear-gradient(135deg, rgba(244, 67, 54, 0.08) 0%, rgba(244, 67, 54, 0.04) 100%);
-}
-
-.service-card--fractional:hover .service-card-icon svg {
-    color: #f44336;
 }
 
 .service-card--devops:hover {
@@ -525,17 +520,29 @@ h6 {
     background: linear-gradient(135deg, rgba(76, 175, 80, 0.08) 0%, rgba(76, 175, 80, 0.04) 100%);
 }
 
-.service-card--devops:hover .service-card-icon svg {
-    color: #4caf50;
-}
-
 .service-card--discovery:hover {
     border-color: #9c27b0;
     background: linear-gradient(135deg, rgba(156, 39, 176, 0.08) 0%, rgba(156, 39, 176, 0.04) 100%);
 }
 
-.service-card--discovery:hover .service-card-icon svg {
-    color: #9c27b0;
+.service-card--vibe:hover {
+    border-color: #00bcd4;
+    background: linear-gradient(135deg, rgba(0, 188, 212, 0.08) 0%, rgba(0, 188, 212, 0.04) 100%);
+}
+
+.service-card--extension:hover {
+    border-color: #7e57c2;
+    background: linear-gradient(135deg, rgba(126, 87, 194, 0.08) 0%, rgba(126, 87, 194, 0.04) 100%);
+}
+
+.service-card--data:hover {
+    border-color: #1565c0;
+    background: linear-gradient(135deg, rgba(21, 101, 192, 0.08) 0%, rgba(21, 101, 192, 0.04) 100%);
+}
+
+.service-card--gtm:hover {
+    border-color: #ff6f00;
+    background: linear-gradient(135deg, rgba(255, 111, 0, 0.08) 0%, rgba(255, 111, 0, 0.04) 100%);
 }
 
 /* Icon hover animation */
@@ -557,17 +564,15 @@ h6 {
     }
 
     .service-card {
-        flex-direction: column;
+        grid-template-columns: 1fr;
     }
 
     .service-card-icon {
-        flex: 0 0 auto;
         padding: 2rem 2.5rem;
         border-bottom: 1.5px solid #d0d0d0;
     }
 
     .service-card-text-wrapper {
-        flex: 0 0 auto;
         padding: 1.5rem 2rem;
     }
 }
