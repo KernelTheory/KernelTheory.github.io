@@ -157,11 +157,7 @@ h6 {
     gap: 0.5rem;
     font-weight: 600;
     font-size: 1.15rem;
-}
-
-.nav-logo img {
-    height: 28px;
-    width: auto;
+    color: #1E3F2E;
 }
 
 .nav-links {
