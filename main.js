@@ -107,6 +107,42 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
+    // Nav email — copy to clipboard on click
+    document.querySelectorAll(".nav-email").forEach(function (btn) {
+        var resetTimer;
+        btn.addEventListener("click", function () {
+            var email = btn.getAttribute("data-email");
+            if (!email) return;
+
+            var showCopied = function () {
+                btn.classList.add("copied");
+                clearTimeout(resetTimer);
+                resetTimer = setTimeout(function () {
+                    btn.classList.remove("copied");
+                }, 1800);
+            };
+
+            var fallbackCopy = function () {
+                var ta = document.createElement("textarea");
+                ta.value = email;
+                ta.setAttribute("readonly", "");
+                ta.style.position = "fixed";
+                ta.style.left = "-9999px";
+                document.body.appendChild(ta);
+                ta.select();
+                try { document.execCommand("copy"); } catch (e) {}
+                document.body.removeChild(ta);
+                showCopied();
+            };
+
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+                navigator.clipboard.writeText(email).then(showCopied).catch(fallbackCopy);
+            } else {
+                fallbackCopy();
+            }
+        });
+    });
+
     // Smooth scroll for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
         anchor.addEventListener("click", function (e) {

@@ -180,6 +180,71 @@ h6 {
     color: #666;
 }
 
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.nav-email {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    font-size: 0.95rem;
+    font-weight: 400;
+    color: #000;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    transition: color 0.2s;
+}
+
+.nav-email:hover {
+    color: #666;
+}
+
+.nav-email:focus-visible {
+    outline: 2px solid #000;
+    outline-offset: 4px;
+    border-radius: 2px;
+}
+
+.nav-email-default,
+.nav-email-copied {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    transition: opacity 0.15s ease, transform 0.15s ease;
+}
+
+.nav-email-copied {
+    display: none;
+    color: #1a9b4e;
+    font-weight: 500;
+}
+
+.nav-email.copied .nav-email-default {
+    display: none;
+}
+
+.nav-email.copied .nav-email-copied {
+    display: inline-flex;
+    animation: navEmailPop 0.2s ease-out;
+}
+
+.nav-email .check-icon {
+    font-style: normal;
+    font-weight: 600;
+}
+
+@keyframes navEmailPop {
+    0%   { transform: scale(0.9); opacity: 0; }
+    100% { transform: scale(1);   opacity: 1; }
+}
+
 /* Mobile nav toggle */
 .nav-toggle {
     display: none;
@@ -291,7 +356,7 @@ h6 {
 }
 
 .client-logo img {
-    max-height: 40px;
+    max-height: 56px;
     width: auto;
     object-fit: contain;
     filter: grayscale(1);
@@ -303,9 +368,17 @@ h6 {
     opacity: 1;
 }
 
+.client-logo--mad img {
+    filter: grayscale(1) drop-shadow(0 8px 20px rgba(0, 0, 0, 0.6)) drop-shadow(0 2px 6px rgba(0, 0, 0, 0.5));
+}
+
+.client-logo img.client-logo--quik {
+    max-height: 40px;
+}
+
 .client-logo--text {
     font-weight: 600;
-    font-size: 1.15rem;
+    font-size: 1.5rem;
     letter-spacing: -0.02em;
     color: #000;
     opacity: 0.7;
@@ -1868,6 +1941,10 @@ h6 {
     }
 
     .nav-cta {
+        display: none;
+    }
+
+    .nav-email {
         display: none;
     }
 
