@@ -85,13 +85,13 @@ h6 {
 }
 
 .btn-dark {
-    background: #000;
+    background: #1E3F2E;
     color: #fff;
-    border-color: #000;
+    border-color: #1E3F2E;
 }
 
 .btn-dark:hover {
-    background: #222;
+    background: #2a5740;
 }
 
 .btn-outline {
