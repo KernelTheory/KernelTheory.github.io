@@ -127,6 +127,10 @@ h6 {
     transform: translate(2px, -2px);
 }
 
+section[id] {
+    scroll-margin-top: 80px;
+}
+
 /* ---------- Navbar ---------- */
 .navbar {
     position: fixed;
@@ -164,11 +168,16 @@ h6 {
     display: flex;
     align-items: center;
     gap: 2.5rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .nav-links a {
     font-size: 0.95rem;
     font-weight: 400;
+    color: #000;
     transition: color 0.2s;
 }
 
@@ -1936,6 +1945,7 @@ h6 {
         padding: 1.5rem 2rem;
         gap: 1.25rem;
         border-bottom: 1px solid #e0e0e0;
+        transform: none;
     }
 
     .nav-links.open {
