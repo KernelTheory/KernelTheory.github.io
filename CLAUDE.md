@@ -48,3 +48,25 @@ Current branch `new-look` contains the recent redesign (see commits `f172344`, `
 - Preserve the existing visual system in `styles.css`; don't introduce a framework or build tooling without asking.
 - Match brand voice: direct, opinionated, clarity-first. Avoid generic agency language ("we craft beautiful experiences", "passionate team", etc.).
 - Keep copy tight. Founders reading this are skeptical and time-poor.
+
+## Responsiveness
+
+Work-in-progress pass on the `responsiveness` branch. Headless-Chrome screenshots at mobile widths are unreliable for final verification — confirm on a real device or in DevTools device toolbar (iPhone SE 375, iPhone 12 390, iPad 768).
+
+### Done
+- `body { overflow-x: hidden }` as a safety against horizontal scroll.
+- Hero `h1` rescaled for mobile with `overflow-wrap: break-word`.
+- Service-card icon `<img>` capped (previously only SVG was constrained, so PNG icons rendered full-card-width on mobile). New mobile layout: icon left 64–96px, text right — no more stacked+huge.
+- Empty `.nav-actions` hidden on mobile; mobile CTA uses `inline-flex` so it sizes to content.
+- Hero padding / subtext sizing / carousel logo sizes + mask edges tuned for mobile.
+- Case study page: mobile rules for `.cs-hero`, `.cs-section`, `.cs-work-grid`, `.cs-transform`, `.fcase-*` (incl. `.fcase-ba` stacking labels above values).
+- Work page: `.work-hero` padding + `.fcase--feature` body padding reduced on mobile.
+- Footer: compact stacked layout on mobile, wrapping policy links.
+- Modal padding reduced at ≤480.
+- `styles.css?v=32` → `?v=33` on `index.html`, `work.html`, `quik-referral.html`.
+
+### Pending / unverified
+- **Human QA in DevTools device toolbar** at 375 / 390 / 768. Headless screenshots suggested residual hero-h1 clipping; likely a rendering artifact but not confirmed.
+- **`work.html` `fcase--feature` SVG thumb** — aspect ratio not retuned for mobile; card may feel tall. Consider shortening `aspect-ratio` or hiding decorative SVG below a breakpoint.
+- **`how-we-help` and long-form case-study content** weren't re-screenshotted after the changes; skim for regressions.
+- Consider whether mobile nav dropdown should close on outside tap (currently only closes on link click).

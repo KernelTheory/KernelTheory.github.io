@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="styles.css?v=32">
+    <link rel="stylesheet" href="styles.css?v=36">
 </head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-WLSPG4KE3Q"></script>
@@ -24,7 +24,7 @@
 <body>
 
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="navbar hero-visible">
         <div class="container">
             <a href="/" class="nav-logo">
                 Kernel Theory
@@ -55,13 +55,12 @@
     <section class="hero">
         <div class="container">
             <p class="hero-tag">Product & engineering &middot; for early-stage founders </p>
-            <h1>From messy ideas or broken products <span class="text-gray">to clear, working systems</span></h1>
-            <p class="hero-subtext">We help early-stage founders figure out what to build, fix what's not working, and
-                ship systems they fully understand and own.</p>
+            <h1>From vague ideas and broken products <span class="text-gray">to clear, working systems</span></h1>
+            <p class="hero-subtext">We help early-stage founders figure out what to build,
+                fix what's not working, and ship systems they fully understand and own.</p>
             <div class="hero-cta-row">
-                <a href="https://calendly.com/hey-kerneltheory/30min" target="_blank"
-                    class="btn btn-dark hero-cta">Start
-                    with a discovery call <i class="arrow-icon">&nearr;</i></a>
+                <a href="https://calendly.com/hey-kerneltheory/30min" target="_blank" class="btn btn-dark hero-cta">Book
+                    a free discovery call <i class="arrow-icon">&nearr;</i></a>
                 <div class="hero-logos" aria-label="Clients we've worked with">
                     <div class="hero-logos-track">
                         <div class="client-logo"><img src="images/client-1-logo.png" alt="IIHS"></div>
@@ -95,9 +94,9 @@
     <section class="what-we-do" id="services">
         <div class="container">
             <p class="services-label">What we do</p>
-            <h2 class="what-we-do-heading">A focused set of engagements <span class="text-gray">— built for founders who
-                    want clarity, ownership, and systems that actually work.</span></h2>
-
+            <h2 class="what-we-do-heading">A focused set of product and engineering engagements <span
+                    class="text-gray">built for founders who
+                    want clarity, ownership, and systems that work.</span></h2>
             <div class="service-cards">
                 <!-- 1. AI integration -->
                 <article class="service-card service-card--ai" data-color="orange">
@@ -106,8 +105,7 @@
                     </div>
                     <div class="service-card-text-wrapper">
                         <h3 class="service-card-title">Integrate AI into your product</h3>
-                        <p class="service-card-text">Agentic systems integration and automation tailored to how you
-                            ship.
+                        <p class="service-card-text">Automations and Agentic workflows that fit in your existing system.
                         </p>
                     </div>
                 </article>
@@ -130,9 +128,9 @@
                         <img src="images/vibe-app.png" alt="" />
                     </div>
                     <div class="service-card-text-wrapper">
-                        <h3 class="service-card-title">Fix vibe-coded applications</h3>
-                        <p class="service-card-text">Stabilize rushed builds, refactor safely, and make releases
-                            predictable.</p>
+                        <h3 class="service-card-title">Fix vibe-coded products</h3>
+                        <p class="service-card-text">Stabilise messy codebases, refactor, reduce security risk,
+                            and make releases predictable.</p>
                     </div>
                 </article>
 
@@ -143,7 +141,8 @@
                     </div>
                     <div class="service-card-text-wrapper">
                         <h3 class="service-card-title">Product discovery report</h3>
-                        <p class="service-card-text">Structured research and a clear view on what to build next.</p>
+                        <p class="service-card-text">Know what to build and who it is for, before you spend months
+                            building it.</p>
                     </div>
                 </article>
 
@@ -154,7 +153,7 @@
                     </div>
                     <div class="service-card-text-wrapper">
                         <h3 class="service-card-title">Fractional CTO / CPO</h3>
-                        <p class="service-card-text">Embedded leadership for roadmap, architecture, and team execution.
+                        <p class="service-card-text">Senior product + engineering leadership, without a full-time hire.
                         </p>
                     </div>
                 </article>
@@ -179,7 +178,8 @@
                     </div>
                     <div class="service-card-text-wrapper">
                         <h3 class="service-card-title">Browser extensions</h3>
-                        <p class="service-card-text">Extensions for Chrome, Edge, and Firefox that fit your product.</p>
+                        <p class="service-card-text">For Chrome, Edge, and Firefox, designed to work with your product.
+                        </p>
                     </div>
                 </article>
 
@@ -190,7 +190,8 @@
                     </div>
                     <div class="service-card-text-wrapper">
                         <h3 class="service-card-title">Data engineering and analytics</h3>
-                        <p class="service-card-text">Pipelines, models, and reporting your team can actually use.</p>
+                        <p class="service-card-text">Pipelines, data models, and reporting your team can actually use.
+                        </p>
                     </div>
                 </article>
 
@@ -230,8 +231,10 @@
             <div class="hwh-header">
                 <h2 class="hwh-title">How we help</h2>
                 <p class="what-we-do-heading" style="margin-bottom: 0;">Five phases we move through with founders
-                    &mdash; <span class="text-gray">whether you're starting from scratch or stabilizing something
-                        already broken.</span></p>
+                    <span class="text-gray">whether you're starting from scratch or stabilizing something
+                        already broken.</span>
+                </p>
+
             </div>
 
             <ol class="hwh-steps">
@@ -239,7 +242,7 @@
                     <span class="hwh-step-num">01</span>
                     <div class="hwh-step-content">
                         <h3 class="hwh-step-title">Figure out what to build</h3>
-                        <p class="hwh-step-desc">You don't need more features&mdash;you need clarity. We define what's
+                        <p class="hwh-step-desc">You need clarity, not more features. We help you define what's
                             worth building and what's not.</p>
                         <p class="hwh-step-meta">Validation &middot; Scope &middot; Product direction</p>
                     </div>
@@ -257,8 +260,8 @@
                 <li class="hwh-step">
                     <span class="hwh-step-num">03</span>
                     <div class="hwh-step-content">
-                        <h3 class="hwh-step-title">Build only what matters</h3>
-                        <p class="hwh-step-desc">Once the foundation is stable, we build with structure and intent.</p>
+                        <h3 class="hwh-step-title">Build your product the right away</h3>
+                        <p class="hwh-step-desc">Once the foundation is stable, we build clean, scalable systems.</p>
                         <p class="hwh-step-meta">MVP &middot; Features &middot; Systems</p>
                     </div>
                 </li>
@@ -267,7 +270,8 @@
                     <span class="hwh-step-num">04</span>
                     <div class="hwh-step-content">
                         <h3 class="hwh-step-title">Remove manual work</h3>
-                        <p class="hwh-step-desc">Automate what slows you down so the system can scale.</p>
+                        <p class="hwh-step-desc">Automate workflows, integrations, and reporting so your system can
+                            scale.</p>
                         <p class="hwh-step-meta">Workflows &middot; Integrations &middot; Ops</p>
                     </div>
                 </li>
@@ -275,9 +279,10 @@
                 <li class="hwh-step">
                     <span class="hwh-step-num">05</span>
                     <div class="hwh-step-content">
-                        <h3 class="hwh-step-title">Stay involved</h3>
-                        <p class="hwh-step-desc">We don't disappear after delivery&mdash;we help you run the system.</p>
-                        <p class="hwh-step-meta">Ongoing support &middot; Product thinking &middot; Tech leadership</p>
+                        <h3 class="hwh-step-title">Support</h3>
+                        <p class="hwh-step-desc">We help you operate and scale the product independently, support
+                            when needed.</p>
+                        <p class="hwh-step-meta"> Ongoing support &middot; Product thinking &middot; Tech leadership</p>
                     </div>
                 </li>
             </ol>
@@ -307,7 +312,7 @@
                     <div class="fcase-body">
                         <span class="fcase-tag">Fixing a broken MVP</span>
                         <p class="fcase-client">Quik Referral</p>
-                        <h3 class="fcase-title"> From a fragile MVP <span class="text-gray">&rarr; to a system the
+                        <h3 class="fcase-title"> From an incomplete MVP <span class="text-gray">to a system the
                                 founders could control.</span></h3>
                         <dl class="fcase-ba">
                             <dt class="fcase-ba-label">Before</dt>
@@ -362,7 +367,8 @@
                     think endlessly without building.
                     We’ve seen both fail. So we built Kernel Theory to sit in the middle.</p>
                 <p>Between us, Abhinay and Divya have spent over a decade in the trenches of technology — Abhinay rising
-                    from software engineer to VP of Engineering, Divya from software to Head of Product. We've scaled
+                    from software engineer to VP of Engineering, Divya from software engineer to Head of Product. We've
+                    scaled
                     teams, shipped products, and navigated the messy reality of building things that matter.</p>
                 <p>Somewhere along the way, we realized we could create far more impact as partners — working closely
                     with founders, shaping ideas from the ground up, and staying in the room from strategy through
@@ -439,7 +445,8 @@
                 <nav class="footer-nav footer-social">
                     <ul>
                         <!-- <li><a href="#" target="_blank">Twitter <i class="arrow-icon">&nearr;</i></a></li> -->
-                        <li><a href="https://www.linkedin.com/in/abhinaykumar21/" target="_blank">LinkedIn <i class="arrow-icon">&nearr;</i></a></li>
+                        <li><a href="https://www.linkedin.com/in/abhinaykumar21/" target="_blank">LinkedIn <i
+                                    class="arrow-icon">&nearr;</i></a></li>
                         <!-- <li><a href="#" target="_blank">Instagram <i class="arrow-icon">&nearr;</i></a></li> -->
                     </ul>
                 </nav>
