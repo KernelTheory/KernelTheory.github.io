@@ -2115,6 +2115,7 @@ section[id] {
     .hero {
         padding: 7rem 0 3.5rem;
         min-height: auto;
+        text-align: center;
     }
 
     .hero-tag {
@@ -2124,21 +2125,25 @@ section[id] {
     .hero h1 {
         font-size: clamp(1.9rem, 8.5vw, 2.4rem);
         margin-bottom: 1.25rem;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .hero-subtext {
         font-size: 1rem;
         margin-bottom: 2rem;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .hero-cta-row {
         flex-direction: column;
-        align-items: stretch;
+        align-items: center;
         gap: 2rem;
     }
 
     .hero-cta {
-        align-self: flex-start;
+        align-self: center;
     }
 
     .hero-logos {
@@ -2172,6 +2177,19 @@ section[id] {
 
     .what-we-do-heading {
         margin-bottom: 2.5rem;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .services-label {
+        text-align: center;
+    }
+
+    .hwh-header {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .featured-cases {
@@ -2180,6 +2198,21 @@ section[id] {
 
     .featured-cases-header {
         margin-bottom: 2rem;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .fcase-body {
+        text-align: center;
+    }
+
+    .fcase-tag {
+        align-self: center;
+    }
+
+    .fcase-link {
+        align-self: center;
     }
 
     .our-story {
@@ -2208,6 +2241,7 @@ section[id] {
 
     .footer-cta {
         grid-column: 1 / -1;
+        text-align: center;
     }
 
     .footer-cta h2 {
@@ -2217,7 +2251,8 @@ section[id] {
 
     .footer-bottom {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
+        text-align: center;
         gap: 0.75rem;
     }
 
