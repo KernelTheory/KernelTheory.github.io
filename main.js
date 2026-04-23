@@ -26,6 +26,19 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
+    // Hide center nav links while hero is visible; show once scrolled past it
+    var hero = document.querySelector(".hero");
+    if (navbar && hero && "IntersectionObserver" in window) {
+        var heroObs = new IntersectionObserver(function (entries) {
+            entries.forEach(function (e) {
+                navbar.classList.toggle("hero-visible", e.isIntersecting);
+            });
+        }, { threshold: 0, rootMargin: "-80px 0px 0px 0px" });
+        heroObs.observe(hero);
+    } else if (navbar && !hero) {
+        navbar.classList.remove("hero-visible");
+    }
+
     // How We Help — scroll reveal + active step
     var hwhSteps = document.querySelectorAll(".hwh-step");
     if (hwhSteps.length && "IntersectionObserver" in window) {

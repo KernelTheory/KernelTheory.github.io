@@ -173,6 +173,15 @@ section[id] {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    transition: opacity 0.25s ease, visibility 0.25s ease;
+}
+
+@media (min-width: 769px) {
+    .navbar.hero-visible .nav-links {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
 }
 
 .nav-links a {
