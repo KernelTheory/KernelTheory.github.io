@@ -849,7 +849,7 @@ section[id] {
     font-size: 1.05rem;
     color: #777;
     line-height: 1.6;
-    max-width: 620px;
+    max-width: 750px;
     margin-bottom: 1.15rem;
     transition: color 300ms ease;
 }
