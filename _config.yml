@@ -5,4 +5,4 @@ exclude:
   - .idea
   - .DS_Store
   - .env
-  - .md
+  - "**/*.md"
