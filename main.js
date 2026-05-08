@@ -7,13 +7,18 @@ document.addEventListener("DOMContentLoaded", function () {
     var toggle = document.getElementById("navToggle");
     var links = document.getElementById("navLinks");
     if (toggle && links) {
+        toggle.setAttribute("aria-expanded", "false");
         toggle.addEventListener("click", function () {
-            links.classList.toggle("open");
+            var isOpen = links.classList.toggle("open");
+            toggle.classList.toggle("is-open", isOpen);
+            toggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
         });
         // Close nav when a link is clicked
         links.querySelectorAll("a").forEach(function (a) {
             a.addEventListener("click", function () {
                 links.classList.remove("open");
+                toggle.classList.remove("is-open");
+                toggle.setAttribute("aria-expanded", "false");
             });
         });
     }
