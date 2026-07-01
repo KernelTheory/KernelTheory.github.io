@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="./image-slot.js"></script>
+<style>
+  html,body{margin:0;padding:0;background:#0A0A0A;}
+  ::selection{background:#1E3F2E;color:#fff;}
+</style>
+</helmet>
+
+<x-import component-from-global-scope="deck-stage" from="./deck-stage.js" width="1920" height="1080" hint-size="100%,100%">
+
+<!-- ══════════ 1 · COVER ══════════ -->
+<section data-label="Cover" data-speaker-notes="KernelTheory — boutique software & product studio. Open warm: we help founders figure out what to build, fix what's broken, and ship systems they own." style="width:100%;height:100%;box-sizing:border-box;background:#FFFFFF;color:#0A0A0A;font-family:'Inter',sans-serif;padding:88px 120px;display:flex;flex-direction:column;justify-content:space-between;">
+  <div style="display:flex;justify-content:space-between;align-items:center;">
+    <div style="display:flex;align-items:center;gap:14px;">
+      <span style="font-size:27px;font-weight:600;letter-spacing:-0.02em;color:#1E3F2E;">Kernel Theory</span>
+    </div>
+    <span style="font-family:'JetBrains Mono',monospace;font-size:18px;letter-spacing:0.16em;color:#6B6B6B;">PORTFOLIO — 2026</span>
+  </div>
+
+  <div style="max-width:1400px;">
+    <div style="font-family:'JetBrains Mono',monospace;font-size:19px;letter-spacing:0.18em;text-transform:uppercase;color:#1E3F2E;margin-bottom:38px;">Product &amp; engineering · for early-stage founders</div>
+    <h1 style="margin:0;font-size:96px;line-height:0.98;font-weight:600;letter-spacing:-0.038em;">From vague ideas and broken products<br><span style="color:#6B6B6B;">to clear, working systems.</span></h1>
+  </div>
+
+  <div style="display:flex;justify-content:space-between;align-items:flex-end;border-top:1px solid #E6E6E6;padding-top:32px;">
+    <p style="margin:0;max-width:720px;font-size:26px;line-height:1.5;color:#3A3A3A;">We help early-stage founders figure out what to build, fix what's not working, and ship systems they fully understand and own.</p>
+    <span style="font-family:'JetBrains Mono',monospace;font-size:18px;letter-spacing:0.08em;color:#6B6B6B;white-space:nowrap;"><a href="mailto:hey@kerneltheory.com" style="color:inherit;text-decoration:none;">hey@kerneltheory.com</a></span>
+  </div>
+</section>
+
+<!-- ══════════ 2 · ABOUT / HOW WE WORK ══════════ -->
+<section data-label="How we work" data-speaker-notes="The in-between positioning: most teams build fast without thinking, or think endlessly without building. We sit in the middle. Two senior partners, in the room from strategy through delivery." style="width:100%;height:100%;box-sizing:border-box;background:#FFFFFF;color:#0A0A0A;font-family:'Inter',sans-serif;padding:88px 120px;display:flex;flex-direction:column;justify-content:space-between;">
+  <div style="display:flex;justify-content:space-between;align-items:baseline;">
+    <div style="font-family:'JetBrains Mono',monospace;font-size:18px;letter-spacing:0.18em;text-transform:uppercase;color:#1E3F2E;">Why KernelTheory</div>
+    <span style="font-family:'JetBrains Mono',monospace;font-size:18px;color:#6B6B6B;">01</span>
+  </div>
+
+  <div style="display:grid;grid-template-columns:1.15fr 1fr;gap:100px;align-items:center;">
+    <div>
+      <h2 style="margin:0 0 32px;font-size:64px;line-height:1.04;font-weight:600;letter-spacing:-0.03em;">A studio small enough to care, experienced enough to deliver, and honest enough to tell you what you actually need <span style="color:#6B6B6B;">— even when it's not what you expected to hear.</span></h2>
+      <div style="display:flex;gap:12px;flex-wrap:wrap;">
+        <span style="font-family:'JetBrains Mono',monospace;font-size:16px;color:#1E3F2E;background:#EAF0EC;padding:9px 16px;border-radius:999px;">Two senior partners</span>
+        <span style="font-family:'JetBrains Mono',monospace;font-size:16px;color:#1E3F2E;background:#EAF0EC;padding:9px 16px;border-radius:999px;">No hand-offs</span>
+        <span style="font-family:'JetBrains Mono',monospace;font-size:16px;color:#1E3F2E;background:#EAF0EC;padding:9px 16px;border-radius:999px;">Strategy → delivery</span>
+      </div>
+    </div>
+
+    <div style="border-left:1px solid #E6E6E6;padding-left:56px;">
+      <div style="font-family:'JetBrains Mono',monospace;font-size:16px;letter-spacing:0.14em;text-transform:uppercase;color:#6B6B6B;margin-bottom:28px;">How we work</div>
+      <div style="display:flex;flex-direction:column;gap:22px;">
+        <div style="display:flex;gap:20px;align-items:baseline;"><span style="font-family:'JetBrains Mono',monospace;font-size:17px;color:#1E3F2E;min-width:28px;">01</span><div><div style="font-size:24px;font-weight:600;">Figure out what to build</div></div></div>
+        <div style="display:flex;gap:20px;align-items:baseline;"><span style="font-family:'JetBrains Mono',monospace;font-size:17px;color:#1E3F2E;min-width:28px;">02</span><div><div style="font-size:24px;font-weight:600;">Fix what's already broken</div></div></div>
+        <div style="display:flex;gap:20px;align-items:baseline;"><span style="font-family:'JetBrains Mono',monospace;font-size:17px;color:#1E3F2E;min-width:28px;">03</span><div><div style="font-size:24px;font-weight:600;">Build the right way</div></div></div>
+        <div style="display:flex;gap:20px;align-items:baseline;"><span style="font-family:'JetBrains Mono',monospace;font-size:17px;color:#1E3F2E;min-width:28px;">04</span><div><div style="font-size:24px;font-weight:600;">Remove manual work</div></div></div>
+        <div style="display:flex;gap:20px;align-items:baseline;"><span style="font-family:'JetBrains Mono',monospace;font-size:17px;color:#1E3F2E;min-width:28px;">05</span><div><div style="font-size:24px;font-weight:600;">Support &amp; scale</div></div></div>
+      </div>
+    </div>
+  </div>
+
+  <div style="display:flex;gap:10px;flex-wrap:wrap;border-top:1px solid #E6E6E6;padding-top:28px;">
+    <span style="font-size:19px;color:#6B6B6B;">AI integration</span><span style="color:#D6D6D6;">·</span>
+    <span style="font-size:19px;color:#6B6B6B;">Web &amp; mobile apps</span><span style="color:#D6D6D6;">·</span>
+    <span style="font-size:19px;color:#6B6B6B;">Marketing websites</span><span style="color:#D6D6D6;">·</span>
+    <span style="font-size:19px;color:#6B6B6B;">Fixing vibe-coded products</span><span style="color:#D6D6D6;">·</span>
+    <span style="font-size:19px;color:#6B6B6B;">Product discovery</span><span style="color:#D6D6D6;">·</span>
+    <span style="font-size:19px;color:#6B6B6B;">Fractional CTO / CPO</span><span style="color:#D6D6D6;">·</span>
+    <span style="font-size:19px;color:#6B6B6B;">Automation &amp; workflow</span><span style="color:#D6D6D6;">·</span>
+    <span style="font-size:19px;color:#6B6B6B;">Data &amp; analytics</span>
+  </div>
+</section>
+
+<!-- ══════════ 3 · SCHNEIDER (FLAGSHIP) ══════════ -->
+<section data-label="Schneider Electric" data-speaker-notes="Flagship. We're the development partner alongside Mad About Digital. Not a microsite — a premium, immersive storytelling tool: animated SVGs and 3D models telling the Schneider Advisory journey to enterprise audiences." style="width:100%;height:100%;box-sizing:border-box;background:#FFFFFF;color:#0A0A0A;font-family:'Inter',sans-serif;padding:0;display:grid;grid-template-columns:44% 56%;">
+  <div style="padding:80px 64px 72px 120px;display:flex;flex-direction:column;justify-content:space-between;box-sizing:border-box;">
+    <div style="display:flex;justify-content:space-between;align-items:baseline;">
+      <div style="font-family:'JetBrains Mono',monospace;font-size:17px;letter-spacing:0.16em;color:#1E3F2E;">PROJECT 01 / 05</div>
+      <span style="font-family:'JetBrains Mono',monospace;font-size:15px;letter-spacing:0.12em;color:#fff;background:#1E3F2E;padding:6px 13px;border-radius:999px;">FLAGSHIP</span>
+    </div>
+    <div>
+      <h2 style="margin:0 0 10px;font-size:62px;line-height:1;font-weight:600;letter-spacing:-0.03em;">Schneider Electric</h2>
+      <div style="font-size:27px;color:#6B6B6B;font-weight:500;margin-bottom:34px;">An immersive story for Advisory Services</div>
+      <p style="margin:0 0 30px;font-size:23px;line-height:1.55;color:#3A3A3A;">A strategic storytelling tool. A graphics-heavy, immersive narrative of Schneider's sustainability and digital-transformation journey, built for enterprise customers, partners and sales teams.</p>
+      <div style="font-family:'JetBrains Mono',monospace;font-size:15px;letter-spacing:0.14em;text-transform:uppercase;color:#1E3F2E;margin-bottom:20px;">What we built</div>
+      <div style="display:flex;flex-direction:column;gap:14px;">
+        <div style="display:flex;align-items:center;gap:15px;"><span style="width:9px;height:9px;background:#1E3F2E;border-radius:2px;flex-shrink:0;display:block;"></span><span style="font-size:24px;font-weight:600;letter-spacing:-0.01em;color:#141414;">Animated SVGs</span></div>
+        <div style="display:flex;align-items:center;gap:15px;"><span style="width:9px;height:9px;background:#1E3F2E;border-radius:2px;flex-shrink:0;display:block;"></span><span style="font-size:24px;font-weight:600;letter-spacing:-0.01em;color:#141414;">3D models</span></div>
+        <div style="display:flex;align-items:center;gap:15px;"><span style="width:9px;height:9px;background:#1E3F2E;border-radius:2px;flex-shrink:0;display:block;"></span><span style="font-size:24px;font-weight:600;letter-spacing:-0.01em;color:#141414;">Visual narrative</span></div>
+      </div>
+    </div>
+    <div style="font-family:'JetBrains Mono',monospace;font-size:16px;color:#6B6B6B;">Role — Development partner, with Mad About Digital</div>
+  </div>
+  <div style="background:#0A0A0A;display:flex;align-items:center;justify-content:center;padding:70px 72px 70px 0;box-sizing:border-box;">
+    <div style="width:100%;max-width:840px;border-radius:16px;overflow:hidden;background:#fff;box-shadow:0 55px 100px -38px rgba(0,0,0,0.8);">
+      <div style="display:flex;align-items:center;gap:14px;padding:15px 18px;background:#ECEDEE;border-bottom:1px solid #DCDDDE;">
+        <div style="display:flex;gap:8px;">
+          <span style="width:12px;height:12px;border-radius:50%;background:#ff5f57;display:block;"></span>
+          <span style="width:12px;height:12px;border-radius:50%;background:#febc2e;display:block;"></span>
+          <span style="width:12px;height:12px;border-radius:50%;background:#28c840;display:block;"></span>
+        </div>
+      </div>
+      <div style="position:relative;height:790px;overflow:hidden;">
+        <img src="uploads/schneider-sustainability.png" alt="Schneider Advisory Services site" style="width:100%;display:block;">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ 4 · QUIK REFERRAL ══════════ -->
+<section data-label="Quik Referral" data-speaker-notes="Came with a working but fragile, expensive MVP. Needed clarity, structure and ownership — not more features. In ~8 months: single founder-owned repo, staging+prod with automated deploys, proper tooling, an in-house engineer, predictable cost." style="width:100%;height:100%;box-sizing:border-box;background:#FFFFFF;color:#0A0A0A;font-family:'Inter',sans-serif;padding:0;display:grid;grid-template-columns:44% 56%;">
+  <div style="padding:80px 64px 72px 120px;display:flex;flex-direction:column;justify-content:space-between;box-sizing:border-box;">
+    <div style="font-family:'JetBrains Mono',monospace;font-size:17px;letter-spacing:0.16em;color:#1E3F2E;">PROJECT 02 / 05</div>
+    <div>
+      <h2 style="margin:0 0 10px;font-size:62px;line-height:1;font-weight:600;letter-spacing:-0.03em;">Quik Referral</h2>
+      <div style="font-size:27px;color:#6B6B6B;font-weight:500;margin-bottom:32px;">Turning a fragile MVP into a system they own</div>
+      <p style="margin:0 0 34px;font-size:23px;line-height:1.55;color:#3A3A3A;">They arrived with a working MVP that was fragile, expensive and hard to operate. What they needed wasn't more development — it was clarity, structure and ownership.</p>
+      <div style="border-left:2px solid #1E3F2E;padding-left:24px;">
+        <p style="margin:0 0 14px;font-size:23px;line-height:1.5;color:#0A0A0A;">"Divya transformed a complex, distributed codebase into a stable, reliable foundation… and played a pivotal role as our Fractional CTO beyond engineering."</p>
+        <div style="font-family:'JetBrains Mono',monospace;font-size:15px;color:#6B6B6B;">Lydia — co-founder &amp; CEO, Quik Referral</div>
+      </div>
+    </div>
+    <div style="font-family:'JetBrains Mono',monospace;font-size:16px;color:#6B6B6B;">Engagement — Fractional CTO · ~8 months</div>
+  </div>
+  <div style="background:#0A0A0A;padding:64px 72px 64px 64px;display:flex;flex-direction:column;justify-content:center;gap:26px;box-sizing:border-box;">
+    <div style="width:100%;border-radius:14px;overflow:hidden;background:#fff;box-shadow:0 45px 90px -40px rgba(0,0,0,0.85);">
+      <div style="display:flex;align-items:center;gap:12px;padding:13px 16px;background:#ECEDEE;border-bottom:1px solid #DCDDDE;">
+        <div style="display:flex;gap:7px;">
+          <span style="width:11px;height:11px;border-radius:50%;background:#ff5f57;display:block;"></span>
+          <span style="width:11px;height:11px;border-radius:50%;background:#febc2e;display:block;"></span>
+          <span style="width:11px;height:11px;border-radius:50%;background:#28c840;display:block;"></span>
+        </div>
+      </div>
+      <img src="uploads/quik_referral_new_hero.png" alt="Quik Referral site" style="width:100%;display:block;">
+    </div>
+
+    <div style="display:flex;align-items:stretch;gap:16px;">
+      <div style="flex:1;background:#161616;border:1px solid #2A2A2A;border-radius:14px;padding:22px 24px;">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:0.14em;text-transform:uppercase;color:#C96A5E;margin-bottom:14px;">Before</div>
+        <div style="display:flex;flex-direction:column;gap:9px;">
+          <div style="font-size:16px;color:#9A9A9A;line-height:1.35;">Distributed, undocumented codebase</div>
+          <div style="font-size:16px;color:#9A9A9A;line-height:1.35;">Env tied to production access</div>
+          <div style="font-size:16px;color:#9A9A9A;line-height:1.35;">Heavy agency dependence · unclear cost</div>
+        </div>
+      </div>
+      <div style="display:flex;align-items:center;color:#5CA87E;font-size:24px;">→</div>
+      <div style="flex:1;background:#1E3F2E;border-radius:14px;padding:22px 24px;">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.7);margin-bottom:14px;">After</div>
+        <div style="display:flex;flex-direction:column;gap:9px;">
+          <div style="font-size:16px;color:rgba(255,255,255,0.92);line-height:1.35;">Single, founder-owned repo</div>
+          <div style="font-size:16px;color:rgba(255,255,255,0.92);line-height:1.35;">Staging + prod · safe auto-deploys</div>
+          <div style="font-size:16px;color:rgba(255,255,255,0.92);line-height:1.35;">In-house engineer · predictable cost</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ 5 · MYMAKAAN ══════════ -->
+<section data-label="MyMakaan" data-speaker-notes="A managed maintenance layer for hotels and Airbnb operators — structured, accountable operations. The goal isn't to offer services, it's to run part of the customer's business. They're in the validation phase with no product yet, so we built an MVP to validate the idea: templates, their marketing site, and scripts that auto-populate Basecamp per client." style="width:100%;height:100%;box-sizing:border-box;background:#FFFFFF;color:#0A0A0A;font-family:'Inter',sans-serif;padding:0;display:grid;grid-template-columns:44% 56%;">
+  <div style="padding:80px 64px 72px 120px;display:flex;flex-direction:column;justify-content:space-between;box-sizing:border-box;">
+    <div style="font-family:'JetBrains Mono',monospace;font-size:17px;letter-spacing:0.16em;color:#1E3F2E;">PROJECT 03 / 05</div>
+    <div>
+      <h2 style="margin:0 0 10px;font-size:62px;line-height:1;font-weight:600;letter-spacing:-0.03em;">MyMakaan</h2>
+      <div style="font-size:27px;color:#6B6B6B;font-weight:500;margin-bottom:34px;">Validating a managed-operations business</div>
+      <p style="margin:0 0 30px;font-size:23px;line-height:1.55;color:#3A3A3A;">A managed maintenance layer for hotels and Airbnb operators — replacing fragmented vendor workflows with structured, accountable operations. The goal isn't to offer services, it's to run part of the customer's business.</p>
+      <div style="font-family:'JetBrains Mono',monospace;font-size:15px;letter-spacing:0.14em;text-transform:uppercase;color:#1E3F2E;margin-bottom:20px;">What we built</div>
+      <div style="display:flex;flex-direction:column;gap:14px;">
+        <div style="display:flex;align-items:center;gap:15px;"><span style="width:9px;height:9px;background:#1E3F2E;border-radius:2px;flex-shrink:0;display:block;"></span><span style="font-size:24px;font-weight:600;letter-spacing:-0.01em;color:#141414;">Validation MVP</span></div>
+        <div style="display:flex;align-items:center;gap:15px;"><span style="width:9px;height:9px;background:#1E3F2E;border-radius:2px;flex-shrink:0;display:block;"></span><span style="font-size:24px;font-weight:600;letter-spacing:-0.01em;color:#141414;">Marketing site</span></div>
+        <div style="display:flex;align-items:center;gap:15px;"><span style="width:9px;height:9px;background:#1E3F2E;border-radius:2px;flex-shrink:0;display:block;"></span><span style="font-size:24px;font-weight:600;letter-spacing:-0.01em;color:#141414;">Basecamp automation</span></div>
+      </div>
+    </div>
+    <div style="font-family:'JetBrains Mono',monospace;font-size:16px;color:#6B6B6B;">Stage — business validation · hospitality ops</div>
+  </div>
+  <div style="background:#0A0A0A;display:flex;align-items:center;justify-content:center;padding:70px 72px 70px 0;box-sizing:border-box;">
+    <div style="width:100%;max-width:840px;border-radius:16px;overflow:hidden;background:#fff;box-shadow:0 55px 100px -38px rgba(0,0,0,0.8);">
+      <div style="display:flex;align-items:center;gap:14px;padding:15px 18px;background:#ECEDEE;border-bottom:1px solid #DCDDDE;">
+        <div style="display:flex;gap:8px;">
+          <span style="width:12px;height:12px;border-radius:50%;background:#ff5f57;display:block;"></span>
+          <span style="width:12px;height:12px;border-radius:50%;background:#febc2e;display:block;"></span>
+          <span style="width:12px;height:12px;border-radius:50%;background:#28c840;display:block;"></span>
+        </div>
+      </div>
+      <div style="position:relative;height:790px;overflow:hidden;">
+        <img src="uploads/mymakaan-full.png" alt="MyMakaan marketing site" style="width:100%;display:block;">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ 6 · APPC8 ══════════ -->
+<section data-label="AppC8" data-speaker-notes="For C3C Limited. A complex tipping-platform MVP, marketing site through product: QR codes for transferring money, splitting tips across a team, and month-end settlements." style="width:100%;height:100%;box-sizing:border-box;background:#FFFFFF;color:#0A0A0A;font-family:'Inter',sans-serif;padding:0;display:grid;grid-template-columns:44% 56%;">
+  <div style="padding:80px 64px 72px 120px;display:flex;flex-direction:column;justify-content:space-between;box-sizing:border-box;">
+    <div style="font-family:'JetBrains Mono',monospace;font-size:17px;letter-spacing:0.16em;color:#1E3F2E;">PROJECT 04 / 05</div>
+    <div>
+      <h2 style="margin:0 0 10px;font-size:62px;line-height:1;font-weight:600;letter-spacing:-0.03em;">AppC8</h2>
+      <div style="font-size:27px;color:#6B6B6B;font-weight:500;margin-bottom:32px;">A digital tipping platform, end to end</div>
+      <p style="margin:0 0 34px;font-size:23px;line-height:1.55;color:#3A3A3A;">A complex MVP for C3C Limited — from marketing site through to a working product that moves real money between people and teams.</p>
+      <div style="font-family:'JetBrains Mono',monospace;font-size:15px;letter-spacing:0.14em;text-transform:uppercase;color:#1E3F2E;margin-bottom:20px;">What we built</div>
+      <div style="display:flex;flex-direction:column;gap:14px;">
+        <div style="display:flex;align-items:center;gap:15px;"><span style="width:9px;height:9px;background:#1E3F2E;border-radius:2px;flex-shrink:0;display:block;"></span><span style="font-size:24px;font-weight:600;letter-spacing:-0.01em;color:#141414;">QR-code transfers</span></div>
+        <div style="display:flex;align-items:center;gap:15px;"><span style="width:9px;height:9px;background:#1E3F2E;border-radius:2px;flex-shrink:0;display:block;"></span><span style="font-size:24px;font-weight:600;letter-spacing:-0.01em;color:#141414;">Tip splitting</span></div>
+        <div style="display:flex;align-items:center;gap:15px;"><span style="width:9px;height:9px;background:#1E3F2E;border-radius:2px;flex-shrink:0;display:block;"></span><span style="font-size:24px;font-weight:600;letter-spacing:-0.01em;color:#141414;">Month-end settlements</span></div>
+        <div style="display:flex;align-items:center;gap:15px;"><span style="width:9px;height:9px;background:#1E3F2E;border-radius:2px;flex-shrink:0;display:block;"></span><span style="font-size:24px;font-weight:600;letter-spacing:-0.01em;color:#141414;">Finance dashboards</span></div>
+      </div>
+    </div>
+    <div style="font-family:'JetBrains Mono',monospace;font-size:16px;color:#6B6B6B;">Client — C3C Limited</div>
+  </div>
+  <div style="background:#0A0A0A;display:flex;align-items:center;justify-content:center;padding:70px 72px 70px 0;box-sizing:border-box;">
+    <div style="width:100%;max-width:840px;border-radius:16px;overflow:hidden;background:#fff;box-shadow:0 55px 100px -38px rgba(0,0,0,0.8);">
+      <div style="display:flex;align-items:center;gap:14px;padding:15px 18px;background:#ECEDEE;border-bottom:1px solid #DCDDDE;">
+        <div style="display:flex;gap:8px;">
+          <span style="width:12px;height:12px;border-radius:50%;background:#ff5f57;display:block;"></span>
+          <span style="width:12px;height:12px;border-radius:50%;background:#febc2e;display:block;"></span>
+          <span style="width:12px;height:12px;border-radius:50%;background:#28c840;display:block;"></span>
+        </div>
+      </div>
+      <div style="position:relative;height:790px;overflow:hidden;">
+        <img src="uploads/appc8-full.png" alt="AppC8 digital tipping platform site" style="width:100%;display:block;">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ 7 · IIHS ══════════ -->
+<section data-label="IIHS" data-speaker-notes="For the Indian Institute of Human Settlements. A full job application portal and ATS: multi-step application form, candidate email notifications, an admin dashboard, candidate management, and applicant tracking for their HR team." style="width:100%;height:100%;box-sizing:border-box;background:#FFFFFF;color:#0A0A0A;font-family:'Inter',sans-serif;padding:0;display:grid;grid-template-columns:44% 56%;">
+  <div style="padding:80px 64px 72px 120px;display:flex;flex-direction:column;justify-content:space-between;box-sizing:border-box;">
+    <div style="font-family:'JetBrains Mono',monospace;font-size:17px;letter-spacing:0.16em;color:#1E3F2E;">PROJECT 05 / 05</div>
+    <div>
+      <h2 style="margin:0 0 10px;font-size:62px;line-height:1;font-weight:600;letter-spacing:-0.03em;">IIHS</h2>
+      <div style="font-size:27px;color:#6B6B6B;font-weight:500;margin-bottom:32px;">A hiring portal &amp; ATS for their HR team</div>
+      <p style="margin:0 0 34px;font-size:23px;line-height:1.55;color:#3A3A3A;">A job application portal for the Indian Institute of Human Settlements — from candidate-facing forms to the internal tooling HR uses to move people through hiring.</p>
+      <div style="font-family:'JetBrains Mono',monospace;font-size:15px;letter-spacing:0.14em;text-transform:uppercase;color:#1E3F2E;margin-bottom:20px;">What we built</div>
+      <div style="display:flex;flex-direction:column;gap:14px;">
+        <div style="display:flex;align-items:center;gap:15px;"><span style="width:9px;height:9px;background:#1E3F2E;border-radius:2px;flex-shrink:0;display:block;"></span><span style="font-size:24px;font-weight:600;letter-spacing:-0.01em;color:#141414;">Multi-step forms</span></div>
+        <div style="display:flex;align-items:center;gap:15px;"><span style="width:9px;height:9px;background:#1E3F2E;border-radius:2px;flex-shrink:0;display:block;"></span><span style="font-size:24px;font-weight:600;letter-spacing:-0.01em;color:#141414;">Admin dashboard</span></div>
+        <div style="display:flex;align-items:center;gap:15px;"><span style="width:9px;height:9px;background:#1E3F2E;border-radius:2px;flex-shrink:0;display:block;"></span><span style="font-size:24px;font-weight:600;letter-spacing:-0.01em;color:#141414;">Applicant tracking</span></div>
+        <div style="display:flex;align-items:center;gap:15px;"><span style="width:9px;height:9px;background:#1E3F2E;border-radius:2px;flex-shrink:0;display:block;"></span><span style="font-size:24px;font-weight:600;letter-spacing:-0.01em;color:#141414;">Automated applicant screening</span></div>
+        <div style="display:flex;align-items:center;gap:15px;"><span style="width:9px;height:9px;background:#1E3F2E;border-radius:2px;flex-shrink:0;display:block;"></span><span style="font-size:24px;font-weight:600;letter-spacing:-0.01em;color:#141414;">Automated bulk candidate emailing</span></div>
+      </div>
+    </div>
+    <div style="font-family:'JetBrains Mono',monospace;font-size:16px;color:#6B6B6B;">Client — Indian Institute of Human Settlements</div>
+  </div>
+  <div style="background:#F5F6F5;padding:72px 120px 72px 64px;display:flex;flex-direction:column;justify-content:center;box-sizing:border-box;">
+    <div style="background:#FFFFFF;border:1px solid #E6E6E6;border-radius:18px;overflow:hidden;box-shadow:0 30px 60px -30px rgba(0,0,0,0.18);">
+      <div style="display:flex;align-items:center;justify-content:space-between;padding:20px 26px;border-bottom:1px solid #EEEEEE;">
+        <div style="display:flex;align-items:center;gap:11px;"><div style="width:16px;height:16px;background:#1E3F2E;border-radius:4px;"></div><span style="font-size:19px;font-weight:600;">Candidate Pipeline</span></div>
+        <span style="font-family:'JetBrains Mono',monospace;font-size:14px;color:#8A8A8A;">ATS · HR</span>
+      </div>
+      <div style="display:flex;gap:14px;padding:22px 26px 6px;">
+        <div style="flex:1;text-align:center;"><div style="font-size:30px;font-weight:600;">248</div><div style="font-family:'JetBrains Mono',monospace;font-size:13px;color:#8A8A8A;">APPLIED</div></div>
+        <div style="flex:1;text-align:center;"><div style="font-size:30px;font-weight:600;">64</div><div style="font-family:'JetBrains Mono',monospace;font-size:13px;color:#8A8A8A;">SCREENED</div></div>
+        <div style="flex:1;text-align:center;"><div style="font-size:30px;font-weight:600;color:#1E3F2E;">18</div><div style="font-family:'JetBrains Mono',monospace;font-size:13px;color:#8A8A8A;">INTERVIEW</div></div>
+        <div style="flex:1;text-align:center;"><div style="font-size:30px;font-weight:600;color:#1E3F2E;">5</div><div style="font-family:'JetBrains Mono',monospace;font-size:13px;color:#8A8A8A;">OFFER</div></div>
+      </div>
+      <div style="padding:16px 26px 26px;display:flex;flex-direction:column;gap:11px;">
+        <div style="display:flex;align-items:center;justify-content:space-between;padding:14px 18px;background:#F7F8F7;border-radius:11px;"><div style="display:flex;align-items:center;gap:13px;"><div style="width:34px;height:34px;border-radius:50%;background:#DDE6E0;"></div><span style="font-size:18px;font-weight:500;">A. Nair — Research Associate</span></div><span style="font-size:14px;font-weight:600;color:#1E3F2E;background:#EAF0EC;padding:6px 13px;border-radius:999px;">Interview</span></div>
+        <div style="display:flex;align-items:center;justify-content:space-between;padding:14px 18px;background:#F7F8F7;border-radius:11px;"><div style="display:flex;align-items:center;gap:13px;"><div style="width:34px;height:34px;border-radius:50%;background:#DDE6E0;"></div><span style="font-size:18px;font-weight:500;">R. Sharma — Urban Planner</span></div><span style="font-size:14px;font-weight:600;color:#8A6D1F;background:#F3ECD6;padding:6px 13px;border-radius:999px;">Screened</span></div>
+        <div style="display:flex;align-items:center;justify-content:space-between;padding:14px 18px;background:#F7F8F7;border-radius:11px;"><div style="display:flex;align-items:center;gap:13px;"><div style="width:34px;height:34px;border-radius:50%;background:#DDE6E0;"></div><span style="font-size:18px;font-weight:500;">M. Iyer — Data Analyst</span></div><span style="font-size:14px;font-weight:600;color:#1E3F2E;background:#EAF0EC;padding:6px 13px;border-radius:999px;">Offer</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ CLOSING ══════════ -->
+<section data-label="Contact" data-speaker-notes="Close warm. Two senior partners, in the room the whole way. Book a 30-min call." style="width:100%;height:100%;box-sizing:border-box;background:#1E3F2E;color:#FFFFFF;font-family:'Inter',sans-serif;padding:88px 120px;display:flex;flex-direction:column;justify-content:space-between;">
+  <div style="display:flex;justify-content:space-between;align-items:center;">
+    <div style="display:flex;align-items:center;gap:14px;">
+      <span style="font-size:27px;font-weight:600;letter-spacing:-0.02em;color:#FFFFFF;">Kernel Theory</span>
+    </div>
+    <span style="font-family:'JetBrains Mono',monospace;font-size:18px;letter-spacing:0.16em;color:rgba(255,255,255,0.6);">LET'S TALK</span>
+  </div>
+
+  <div style="max-width:1300px;">
+    <div style="font-family:'JetBrains Mono',monospace;font-size:19px;letter-spacing:0.18em;text-transform:uppercase;color:rgba(255,255,255,0.65);margin-bottom:34px;">Small enough to care · experienced enough to deliver</div>
+    <h2 style="margin:0;font-size:88px;line-height:1;font-weight:600;letter-spacing:-0.035em;">Let's build something<br><span style="color:rgba(255,255,255,0.55);">you actually own.</span></h2>
+  </div>
+
+  <div style="display:flex;justify-content:space-between;align-items:flex-end;border-top:1px solid rgba(255,255,255,0.18);padding-top:34px;">
+    <div style="display:flex;gap:56px;">
+      <div><div style="font-family:'JetBrains Mono',monospace;font-size:15px;letter-spacing:0.12em;color:rgba(255,255,255,0.5);margin-bottom:8px;">EMAIL</div><div style="font-size:26px;font-weight:500;"><a href="mailto:hey@kerneltheory.com" style="color:inherit;text-decoration:none;">hey@kerneltheory.com</a></div></div>
+      <div><div style="font-family:'JetBrains Mono',monospace;font-size:15px;letter-spacing:0.12em;color:rgba(255,255,255,0.5);margin-bottom:8px;">WEB</div><div style="font-size:26px;font-weight:500;">kerneltheory.com</div></div>
+    </div>
+    <a href="https://calendly.com/hey-kerneltheory/30min" target="_blank" style="display:inline-flex;align-items:center;gap:12px;background:#FFFFFF;color:#1E3F2E;font-size:23px;font-weight:600;padding:20px 34px;border-radius:999px;text-decoration:none;">Book a 30-min call <span style="font-size:20px;">↗</span></a>
+  </div>
+</section>
+
+</x-import>
+</x-dc>
+</body>
+</html>
