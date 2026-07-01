@@ -596,6 +596,7 @@
       this._onSlotChange = this._onSlotChange.bind(this);
       this._onMouseMove = this._onMouseMove.bind(this);
       this._onTap = this._onTap.bind(this);
+      this._onWheel = this._onWheel.bind(this);
       this._onMessage = this._onMessage.bind(this);
       // Capture-phase close so a click anywhere dismisses the menu, but
       // ignore clicks that land inside the menu itself — otherwise the
@@ -628,6 +629,7 @@
       window.addEventListener('message', this._onMessage);
       window.addEventListener('click', this._onDocClick, true);
       this.addEventListener('click', this._onTap);
+      this.addEventListener('wheel', this._onWheel, { passive: false });
       // Print lays every slide out as its own page, so [data-deck-active]-
       // gated entrance styles need the attribute on every slide (not just
       // the current one) or their content prints at the hidden base style.
@@ -862,6 +864,8 @@
       window.removeEventListener('afterprint', this._onAfterPrint);
       if (this._freezeStyle) { this._freezeStyle.remove(); this._freezeStyle = null; }
       this.removeEventListener('click', this._onTap);
+      this.removeEventListener('wheel', this._onWheel);
+      if (this._wheelTimer) clearTimeout(this._wheelTimer);
       if (this._hideTimer) clearTimeout(this._hideTimer);
       if (this._mouseIdleTimer) clearTimeout(this._mouseIdleTimer);
       if (this._liveTimer) clearTimeout(this._liveTimer);
@@ -1379,6 +1383,31 @@
       const rw = this._railWidth();
       const mid = rw + (window.innerWidth - rw) / 2;
       this._advance(e.clientX < mid ? -1 : 1, 'tap');
+    }
+
+    /** Trackpad/mouse-wheel navigation — a deck has nothing to scroll (the
+     *  stage is a fixed, letterboxed canvas), so a bare wheel gesture would
+     *  otherwise do nothing and feel broken. Treat it like arrow keys: one
+     *  slide per gesture, debounced so a single trackpad swipe (which fires
+     *  many small wheel events) doesn't skip several slides. */
+    _onWheel(e) {
+      // Let the rail's own scrollbar and any slide-authored scrollable
+      // content handle their own wheel events.
+      const path = e.composedPath ? e.composedPath() : [];
+      if (this._rail && path.includes(this._rail)) return;
+      if (this._confirm && this._confirm.hasAttribute('data-open')) return;
+      for (const n of path) {
+        if (n === this._stage) break;
+        if (n.nodeType !== 1) continue;
+        if (n.matches(INTERACTIVE_SEL)) return;
+        if (n.scrollHeight > n.clientHeight && /^(auto|scroll)$/.test(getComputedStyle(n).overflowY)) return;
+      }
+      e.preventDefault();
+      if (this._wheelTimer) return;
+      const delta = Math.abs(e.deltaY) >= Math.abs(e.deltaX) ? e.deltaY : e.deltaX;
+      if (Math.abs(delta) < 12) return;
+      this._advance(delta > 0 ? 1 : -1, 'wheel');
+      this._wheelTimer = setTimeout(() => { this._wheelTimer = null; }, 500);
     }
 
     _onKey(e) {
